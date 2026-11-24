@@ -1,0 +1,68 @@
+{
+  "match_tolerance_ms": 150.0,
+  "records": [
+    {
+      "record": "100",
+      "channel": "MLII",
+      "n_ref_beats": 2273,
+      "n_detected": 2272,
+      "TP": 2272,
+      "FP": 0,
+      "FN": 1,
+      "sensitivity_%": 99.956,
+      "pos_predictivity_%": 100.0
+    },
+    {
+      "record": "101",
+      "channel": "MLII",
+      "n_ref_beats": 1865,
+      "n_detected": 1868,
+      "TP": 1864,
+      "FP": 4,
+      "FN": 1,
+      "sensitivity_%": 99.946,
+      "pos_predictivity_%": 99.786
+    },
+    {
+      "record": "106",
+      "channel": "MLII",
+      "n_ref_beats": 2027,
+      "n_detected": 1998,
+      "TP": 1998,
+      "FP": 0,
+      "FN": 29,
+      "sensitivity_%": 98.569,
+      "pos_predictivity_%": 100.0
+    },
+    {
+      "record": "208",
+      "channel": "MLII",
+      "n_ref_beats": 2955,
+      "n_detected": 2898,
+      "TP": 2886,
+      "FP": 12,
+      "FN": 69,
+      "sensitivity_%": 97.665,
+      "pos_predictivity_%": 99.586
+    },
+    {
+      "record": "234",
+      "channel": "MLII",
+      "n_ref_beats": 2753,
+      "n_detected": 2750,
+      "TP": 2750,
+      "FP": 0,
+      "FN": 3,
+      "sensitivity_%": 99.891,
+      "pos_predictivity_%": 100.0
+    }
+  ],
+  "gross": {
+    "TP": 11770,
+    "FP": 16,
+    "FN": 103,
+    "sensitivity_%": 99.132,
+    "pos_predictivity_%": 99.864
+  },
+  "note": "Reference beats are MIT-BIH ground-truth beat annotations; detections are the Pan-Tompkins golden model. Non-beat symbols are excluded from the reference beat set."
+}

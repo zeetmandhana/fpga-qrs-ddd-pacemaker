@@ -1,0 +1,61 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/ddd_pacemaker.v" into library work
+INFO: [VRFC 10-311] analyzing module ddd_pacemaker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/ddd_pacemaker_apb.v" into library work
+INFO: [VRFC 10-311] analyzing module ddd_pacemaker_apb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/demo_ctrl_apb.v" into library work
+INFO: [VRFC 10-311] analyzing module demo_ctrl_apb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/bd/p17_axi_apb.v" into library work
+INFO: [VRFC 10-311] analyzing module p17_axi_apb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/bd/p17_bd_blocks.v" into library work
+INFO: [VRFC 10-311] analyzing module p17_ddd_slave
+INFO: [VRFC 10-311] analyzing module p17_ctrl_slave
+INFO: [VRFC 10-311] analyzing module p17_display
+INFO: [VRFC 10-311] analyzing module p17_qrs_hls_decision
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/bd/tb_p17_axi_apb.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_p17_axi_apb
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_p17_axi_apb -s bridge_sim -debug off 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.p17_axi_apb
+Compiling module work.ddd_pacemaker
+Compiling module work.ddd_pacemaker_apb
+Compiling module work.p17_ddd_slave
+Compiling module work.demo_ctrl_apb
+Compiling module work.p17_ctrl_slave
+Compiling module work.tb_p17_axi_apb
+Built simulation snapshot bridge_sim
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Nov 22 17:54:37 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/bridge_sim/xsim_script.tcl
+# xsim {bridge_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+  ok   DDD LRI = 1200 (0x000004b0)
+  ok   DDD AVI = 170 (0x000000aa)
+  ok   DDD PVARP = 250 (0x000000fa)
+  ok   DDD CONTROL = 1 (0x00000001)
+  ok   pacemaker enable = 1 (0x00000001)
+  ok   CTRL MODE = 3 (0x00000003)
+  ok   CTRL ID = 1343684609 (0x50170001)
+  ok   CTRL LAST_RR = 777 (0x00000309)
+  ok   text writes = 1 (0x00000001)
+  ok   text addr/data = 1108607041 (0x42140041)
+AXI-APB BRIDGE PASS
+$finish called at time : 2960 ns : File "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/bd/tb_p17_axi_apb.v" Line 93
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Nov 22 17:54:39 2026...

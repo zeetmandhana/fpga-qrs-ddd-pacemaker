@@ -1,0 +1,9 @@
+======== ABC command line "source ep_abc.script"
+Cannot open file "abc.rc".
+Cannot open file "..\abc.rc".
+Cannot open file "..\..\abc.rc".
+event_priority                : i/o =    8/    4  lat =    0  and =      9  lev =  3
+event_priority                : i/o =    8/    4  lat =    0  nd =     4  edge =     18  cube =     9  lit(sop) =    34  lit(fac) =    18  lev = 1
+event_priority                : i/o =    8/    4  lat =    0  nd =     7  edge =     16  cube =     7  lit(sop) =    16  lit(fac) =    16  lev = 3
+event_priority                : i/o =    8/    4  lat =    0  and =      9  lev =  3
+event_priority                : i/o =    8/    4  lat =    0  nd =     9  edge =     18  cube =     9  lit(sop) =    18  lit(fac) =    18  lev = 3

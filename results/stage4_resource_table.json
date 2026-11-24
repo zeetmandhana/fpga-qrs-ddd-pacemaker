@@ -1,0 +1,32 @@
+{
+  "report": "C:\\Vivadoproject\\P17_QRS_Pacemaker\\hls\\qrs_filter_hls\\sol1\\syn\\report\\qrs_filter_csynth.rpt",
+  "device": "xc7a100t-csg324-1",
+  "clock_target_ns": 10.0,
+  "clock_estimated_ns": 10.62,
+  "clock_uncertainty_ns": 2.7,
+  "fmax_mhz_estimated": 94.2,
+  "iteration_latency_cycles": 7,
+  "ii_achieved": 1,
+  "ii_target": 1,
+  "resources": {
+    "BRAM_18K": 0,
+    "DSP": 4,
+    "FF": 5315,
+    "LUT": 1705,
+    "URAM": 0
+  },
+  "available": {
+    "BRAM_18K": 270,
+    "DSP": 240,
+    "FF": 126800,
+    "LUT": 63400,
+    "URAM": 0
+  },
+  "utilization_pct": {
+    "BRAM_18K": 0,
+    "DSP": 1,
+    "FF": 4,
+    "LUT": 2,
+    "URAM": 0
+  }
+}

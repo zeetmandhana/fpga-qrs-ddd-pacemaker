@@ -1,0 +1,25 @@
+# qrs_decision.v control FSM (8 phases), P17 VL401 report Sec. 5.2
+# inputs : i f s
+#   i = in_valid (a new 360 Hz sample)
+#   f = det_now | sb_done  (a QRS was already found this sample -> skip search-back)
+#   s = sb_en & (pend_val > THR2)  (search-back finds a missed beat -> register it)
+# outputs: ld trk cls rg avg lim sbk cnt   (datapath enables, one per phase;
+#   ld = latch the sample in IDLE, cnt = advance the sample counter in END)
+# states : IDL=P_IDLE TRK=P_TRACK CLS=P_CLASS REG=P_REG AVG=P_AVG LIM=P_LIM SBK=P_SB END=P_END
+.i 3
+.o 8
+.s 8
+.p 11
+.r IDL
+0-- IDL IDL 00000000
+1-- IDL TRK 10000000
+--- TRK CLS 01000000
+--- CLS REG 00100000
+--- REG AVG 00010000
+--- AVG LIM 00001000
+-1- LIM END 00000100
+-0- LIM SBK 00000100
+--1 SBK REG 00000010
+--0 SBK END 00000010
+--- END IDL 00000001
+.e

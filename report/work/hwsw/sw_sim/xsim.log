@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Nov 20 17:43:25 2026
+# Process ID         : 46180
+# Current directory  : C:/Vivadoproject/P17_QRS_Pacemaker/report/work/hwsw/sw_sim
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/tb_sw_snap/xsim_script.tcl}
+# Log file           : C:/Vivadoproject/P17_QRS_Pacemaker/report/work/hwsw/sw_sim/xsim.log
+# Journal file       : C:/Vivadoproject/P17_QRS_Pacemaker/report/work/hwsw/sw_sim\xsim.jou
+# Running On         : Zeet
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26300
+# Processor Detail   : AMD Ryzen AI 9 HX 370 w/ Radeon 890M           
+# CPU Frequency      : 1996 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 33412 MB
+# Swap memory        : 13421 MB
+# Total Virtual      : 46834 MB
+# Available Virtual  : 10686 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_sw_snap/xsim_script.tcl
+# xsim {tb_sw_snap} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+Note: [NEORV32] Using default DMEM RAM component (8192 bytes).
+Time: 0 ps  Iteration: 0  Process: /tb_sw_bench/u_cpu/u_cpu/memory_system/neorv32_dmem_enabled/neorv32_dmem_inst/dmem_ram_inst/line__40  File: C:/NEORV32/neorv32/rtl/core/neorv32_dmem_ram.vhd
+Note: [NEORV32] Using default IMEM ROM component (8192 bytes).
+Time: 0 ps  Iteration: 0  Process: /tb_sw_bench/u_cpu/u_cpu/memory_system/neorv32_imem_enabled/neorv32_imem_inst/imem_rom/imem_rom_inst/line__42  File: C:/NEORV32/neorv32/rtl/core/neorv32_imem_rom.vhd
+Note: [NEORV32] CPU tuning options: rf_arch=sram_sync 
+Time: 0 ps  Iteration: 0  Process: /tb_sw_bench/u_cpu/u_cpu/\core_complex_gen(0)\/neorv32_cpu_inst/hello_neorv32/line__197  File: C:/NEORV32/neorv32/rtl/core/neorv32_cpu.vhd
+Note: [NEORV32] CPU ISA: rv32ix_zicntr_zicsr_zifencei
+Time: 0 ps  Iteration: 0  Process: /tb_sw_bench/u_cpu/u_cpu/\core_complex_gen(0)\/neorv32_cpu_inst/hello_neorv32/line__153  File: C:/NEORV32/neorv32/rtl/core/neorv32_cpu.vhd
+Note: [NEORV32] BOOT_MODE_SELECT 2 - booting IMEM image
+Time: 0 ps  Iteration: 0  Process: /tb_sw_bench/u_cpu/u_cpu/config_checks/line__441  File: C:/NEORV32/neorv32/rtl/core/neorv32_top.vhd
+Warning: [NEORV32] Assuming this is a simulation.
+Time: 0 ps  Iteration: 0  Process: /tb_sw_bench/u_cpu/u_cpu/config_checks/line__429  File: C:/NEORV32/neorv32/rtl/core/neorv32_top.vhd
+Note: [NEORV32] Processor Configuration: CPU (single-core) IMEM-ROM DMEM XBUS CLINT GPIO SYSINFO 
+Time: 0 ps  Iteration: 0  Process: /tb_sw_bench/u_cpu/u_cpu/config_checks/line__393  File: C:/NEORV32/neorv32/rtl/core/neorv32_top.vhd
+Note: [NEORV32] The NEORV32 RISC-V Processor (v01.13.02.00), github.com/stnolting/neorv32
+Time: 0 ps  Iteration: 0  Process: /tb_sw_bench/u_cpu/u_cpu/config_checks/line__384  File: C:/NEORV32/neorv32/rtl/core/neorv32_top.vhd
+SW BENCH DONE: 18460 mailbox words, 3070279 clock cycles simulated
+$finish called at time : 122811140 ns : File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/hwsw/tb_sw_bench.v" Line 90
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:02:05 . Memory (MB): peak = 196.500 ; gain = 0.043
+exit
+INFO: xsimkernel Simulation Memory Usage: 12580 KB (Peak: 12580 KB), Simulation CPU Usage: 122343 ms
+INFO: [Common 17-206] Exiting xsim at Fri Nov 20 17:45:31 2026...

@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Nov 22 17:54:08 2026
+# Process ID         : 25104
+# Current directory  : C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/dir_sva
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/cl_sva_snap/xsim_script.tcl}
+# Log file           : C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/dir_sva/xsim.log
+# Journal file       : C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/dir_sva\xsim.jou
+# Running On         : Zeet
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26300
+# Processor Detail   : AMD Ryzen AI 9 HX 370 w/ Radeon 890M           
+# CPU Frequency      : 1996 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 33412 MB
+# Swap memory        : 13421 MB
+# Total Virtual      : 46834 MB
+# Available Virtual  : 16835 MB
+#-----------------------------------------------------------
+source xsim.dir/cl_sva_snap/xsim_script.tcl
+# xsim {cl_sva_snap} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+  scen 1 PVARP 320: 12000 ticks, 0 mismatches, arrhythmia_irq=0
+  scen 2 PVARP 320: 12000 ticks, 0 mismatches, arrhythmia_irq=0
+  scen 3 PVARP 320: 12000 ticks, 0 mismatches, arrhythmia_irq=0
+  scen 4 PVARP 320: 12000 ticks, 0 mismatches, arrhythmia_irq=0
+  scen 5 PVARP 250: 12000 ticks, 0 mismatches, arrhythmia_irq=1
+  scen 5 PVARP 320: 12000 ticks, 0 mismatches, arrhythmia_irq=0
+CLOSED-LOOP BIT-EXACT PASS: 72000 ticks, hardware heart+pacemaker == Python
+$finish called at time : 2161380 ns : File "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/tb_closed_loop.v" Line 93
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Nov 22 17:54:11 2026...

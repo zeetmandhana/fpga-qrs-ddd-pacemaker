@@ -1,0 +1,29 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Fri Nov 20 17:45:29 2026
+| Host         : Zeet running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file C:/Vivadoproject/P17_QRS_Pacemaker/report/work/hand_hls/impl/qrs_fsmd_area_util_hier.rpt
+| Design       : qrs_fsmd_area
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------+--------+------------+------------+---------+------+-----+--------+--------+------------+
+|    Instance   | Module | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++---------------+--------+------------+------------+---------+------+-----+--------+--------+------------+
+| qrs_fsmd_area |  (top) |        670 |        494 |     176 |    0 | 345 |      0 |      0 |          3 |
++---------------+--------+------------+------------+---------+------+-----+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

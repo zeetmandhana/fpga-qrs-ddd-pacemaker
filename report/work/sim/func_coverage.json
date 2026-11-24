@@ -1,0 +1,26 @@
+{
+  "sets": 60,
+  "ticks": 300000,
+  "bins": {
+    "AS": 194,
+    "VS": 599,
+    "AP": 255,
+    "VP": 185,
+    "ARR": 535,
+    "a_in_ignored_in_PVARP": 1295,
+    "v_in_ignored_in_VRP": 1954,
+    "a_in_ignored_in_AVI_phase": 547,
+    "VP_held_by_URI": 16484,
+    "VP_at_AVI": 157,
+    "AS_then_VP": 45,
+    "AP_then_VS": 110,
+    "a_and_v_same_tick": 627,
+    "param_lri_min": 15,
+    "param_lri_max": 12,
+    "param_avi_min": 15,
+    "param_avi_max": 14,
+    "param_uri_eq_lri": 8,
+    "param_pvarp_gt_aei": 11,
+    "param_vrp_max": 15
+  }
+}

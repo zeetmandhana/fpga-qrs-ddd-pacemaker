@@ -1,0 +1,172 @@
+{
+ "samples": 2048,
+ "overhead_cycles": 6,
+ "overhead_instr": 2,
+ "sw": {
+  "filter": {
+   "mean": 898.7568359375,
+   "min": 526,
+   "max": 1195
+  },
+  "decision": {
+   "mean": 484.61767578125,
+   "min": 368,
+   "max": 2531
+  },
+  "total": {
+   "mean": 1383.37451171875,
+   "min": 902,
+   "max": 3712
+  },
+  "decision_learning": {
+   "mean": 512.0791666666667,
+   "min": 424,
+   "max": 1301
+  },
+  "decision_after_learning": {
+   "mean": 469.7289156626506,
+   "min": 368,
+   "max": 2531
+  },
+  "decision_on_detect_samples": {
+   "mean": 1983.0,
+   "min": 871,
+   "max": 2531
+  },
+  "instr_filter": {
+   "mean": 247.9033203125,
+   "min": 144,
+   "max": 331
+  },
+  "instr_decision": {
+   "mean": 95.978515625,
+   "min": 73,
+   "max": 587
+  },
+  "instr_total": {
+   "mean": 343.8818359375,
+   "min": 219,
+   "max": 916
+  },
+  "cpi_filter": 3.6254328292358178,
+  "cpi_decision": 5.049230784884313,
+  "cpi_total": 4.022819373251735
+ },
+ "apb_read_cycles": 7,
+ "apb_read_instr": 1,
+ "apb_value_ok": true,
+ "correct_filter": true,
+ "filter_mismatches": 0,
+ "correct_detections": true,
+ "sw_events": [
+  [
+   738,
+   662,
+   0
+  ],
+  [
+   1022,
+   946,
+   0
+  ],
+  [
+   1306,
+   1231,
+   0
+  ],
+  [
+   1590,
+   1515,
+   0
+  ],
+  [
+   1884,
+   1809,
+   0
+  ]
+ ],
+ "golden_events": [
+  [
+   738,
+   662,
+   0
+  ],
+  [
+   1022,
+   946,
+   0
+  ],
+  [
+   1306,
+   1231,
+   0
+  ],
+  [
+   1590,
+   1515,
+   0
+  ],
+  [
+   1884,
+   1809,
+   0
+  ]
+ ],
+ "hw": {
+  "samples=100000": {
+   "RTL": 341.0,
+   "golden": 341.0,
+   "mismatches": 0.0
+  },
+  "hls_start_to_done": {
+   "min": 7.0,
+   "mean": 7.0,
+   "max": 7.0
+  },
+  "filter_accept_to_decvalid": {
+   "min": 10.0,
+   "mean": 10.0,
+   "max": 10.0
+  },
+  "decision_decvalid_to_idle": {
+   "min": 7.0,
+   "mean": 7.997,
+   "max": 8.0
+  },
+  "decision_on_detect_samples": {
+   "n": 341.0,
+   "mean": 7.0,
+   "max": 7.0
+  },
+  "total_accept_to_idle": {
+   "min": 17.0,
+   "mean": 17.997,
+   "max": 18.0
+  }
+ },
+ "speedup": {
+  "filter_mean": 89.87568359375,
+  "decision_mean": 60.59993444807428,
+  "total_mean": 76.86695069838028,
+  "total_worst": 206.22222222222223
+ },
+ "time_us_at_25MHz": {
+  "sw_total_mean": 55.334980468750004,
+  "sw_total_max": 148.48,
+  "hw_total_mean": 0.71988,
+  "apb_read": 0.28
+ },
+ "cpu_load_pct_at_360Hz": {
+  "sw_only_mean": 1.9920592968750002,
+  "sw_only_worst": 5.34528,
+  "hw_one_apb_read": 0.01008
+ },
+ "amdahl": {
+  "loop_sw": 1390.37451171875,
+  "loop_hw": 24.997,
+  "fraction_accelerated": 0.9949653852677818,
+  "kernel_speedup": 76.86695069838028,
+  "overall_speedup": 55.621655067358084,
+  "limit_if_hw_free": 198.62493024553572
+ }
+}

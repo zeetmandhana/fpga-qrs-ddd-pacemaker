@@ -1,0 +1,116 @@
+%Warning-WIDTHEXPAND: heart_model.v:68:59: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'sinus' generates 16 bits.
+                                         : ... note: In instance 'heart_model'
+   68 |                 if (has_sinus) begin n_sv = 1'b1; n_s = t + sinus; end
+      |                                                           ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.055
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: heart_model.v:70:56: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'av' generates 16 bits.
+                                         : ... note: In instance 'heart_model'
+   70 |                 if (has_av) begin n_av = 1'b1; n_a = t + av; end
+      |                                                        ^
+%Warning-WIDTHEXPAND: heart_model.v:73:57: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'esc' generates 16 bits.
+                                         : ... note: In instance 'heart_model'
+   73 |                 if (has_esc) begin n_ev = 1'b1; n_e = t + esc; end
+      |                                                         ^
+%Warning-WIDTHEXPAND: heart_model.v:75:56: Operator ADD expects 32 bits on the RHS, but RHS's VARREF 'va' generates 16 bits.
+                                         : ... note: In instance 'heart_model'
+   75 |                 if (has_va) begin n_vv = 1'b1; n_r = t + va; end
+      |                                                        ^
+%Warning-BLKSEQ: heart_model.v:63:18: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   63 |             n_sv = sinus_v; n_s = next_sinus;
+      |                  ^
+                 ... For warning description see https://verilator.org/warn/BLKSEQ?v=5.055
+                 ... Use "/* verilator lint_off BLKSEQ */" and lint_on around source to disable this message.
+%Warning-BLKSEQ: heart_model.v:63:33: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   63 |             n_sv = sinus_v; n_s = next_sinus;
+      |                                 ^
+%Warning-BLKSEQ: heart_model.v:64:18: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   64 |             n_ev = escape_v; n_e = next_escape;
+      |                  ^
+%Warning-BLKSEQ: heart_model.v:64:34: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   64 |             n_ev = escape_v; n_e = next_escape;
+      |                                  ^
+%Warning-BLKSEQ: heart_model.v:65:18: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   65 |             n_av = av_v;    n_a = pending_av;
+      |                  ^
+%Warning-BLKSEQ: heart_model.v:65:33: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   65 |             n_av = av_v;    n_a = pending_av;
+      |                                 ^
+%Warning-BLKSEQ: heart_model.v:66:18: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   66 |             n_vv = va_v;    n_r = pending_va;
+      |                  ^
+%Warning-BLKSEQ: heart_model.v:66:33: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   66 |             n_vv = va_v;    n_r = pending_va;
+      |                                 ^
+%Warning-BLKSEQ: heart_model.v:68:43: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   68 |                 if (has_sinus) begin n_sv = 1'b1; n_s = t + sinus; end
+      |                                           ^
+%Warning-BLKSEQ: heart_model.v:68:55: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   68 |                 if (has_sinus) begin n_sv = 1'b1; n_s = t + sinus; end
+      |                                                       ^
+%Warning-BLKSEQ: heart_model.v:69:22: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   69 |                 n_vv = 1'b0;
+      |                      ^
+%Warning-BLKSEQ: heart_model.v:70:40: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   70 |                 if (has_av) begin n_av = 1'b1; n_a = t + av; end
+      |                                        ^
+%Warning-BLKSEQ: heart_model.v:70:52: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   70 |                 if (has_av) begin n_av = 1'b1; n_a = t + av; end
+      |                                                    ^
+%Warning-BLKSEQ: heart_model.v:73:41: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   73 |                 if (has_esc) begin n_ev = 1'b1; n_e = t + esc; end
+      |                                         ^
+%Warning-BLKSEQ: heart_model.v:73:53: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   73 |                 if (has_esc) begin n_ev = 1'b1; n_e = t + esc; end
+      |                                                     ^
+%Warning-BLKSEQ: heart_model.v:74:22: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   74 |                 n_av = 1'b0;
+      |                      ^
+%Warning-BLKSEQ: heart_model.v:75:40: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   75 |                 if (has_va) begin n_vv = 1'b1; n_r = t + va; end
+      |                                        ^
+%Warning-BLKSEQ: heart_model.v:75:52: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   75 |                 if (has_va) begin n_vv = 1'b1; n_r = t + va; end
+      |                                                    ^
+%Warning-BLKSEQ: heart_model.v:76:34: Blocking assignment '=' in sequential logic process
+                                    : ... note: In instance 'heart_model'
+                                    : ... Suggest using delayed assignment '<='
+   76 |                 else        n_vv = 1'b0;
+      |                                  ^
+%Error: Exiting due to 23 warning(s)

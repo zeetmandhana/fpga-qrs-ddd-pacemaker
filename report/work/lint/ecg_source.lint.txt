@@ -1,0 +1,11 @@
+%Warning-WIDTHTRUNC: ecg_source.v:50:42: Bit extraction of array[56:0] requires 6 bit index, not 8 bits.
+                                       : ... note: In instance 'ecg_source'
+   50 |     wire signed [12:0] p_val = p_on ? {tp[pi][11], tp[pi]} : 13'sd0;
+      |                                          ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.055
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: ecg_source.v:50:54: Bit extraction of array[56:0] requires 6 bit index, not 8 bits.
+                                       : ... note: In instance 'ecg_source'
+   50 |     wire signed [12:0] p_val = p_on ? {tp[pi][11], tp[pi]} : 13'sd0;
+      |                                                      ^
+%Error: Exiting due to 2 warning(s)

@@ -1,0 +1,62 @@
+﻿INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_hpbuf_RAM_2P_LUTRAM_1R1W.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_hpbuf_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_lpbuf_RAM_2P_LUTRAM_1R1W.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_lpbuf_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_sqbuf_RAM_2P_LUTRAM_1R1W.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_sqbuf_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_xbuf_RAM_2P_LUTRAM_1R1W.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_xbuf_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_mul_29s_29s_32_2_1.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_mul_29s_29s_32_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/qrs_decision.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_decision
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/qrs_detector.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/hwsw/tb_hw_cycles.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_hw_cycles
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_hw_cycles -s tb_hwcyc_snap -timescale 1ns/1ps 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.qrs_stream_xbuf_RAM_2P_LUTRAM_1R...
+Compiling module work.qrs_stream_lpbuf_RAM_2P_LUTRAM_1...
+Compiling module work.qrs_stream_hpbuf_RAM_2P_LUTRAM_1...
+Compiling module work.qrs_stream_sqbuf_RAM_2P_LUTRAM_1...
+Compiling module work.qrs_stream_mul_29s_29s_32_2_1(NU...
+Compiling module work.qrs_stream
+Compiling module work.qrs_decision
+Compiling module work.qrs_detector
+Compiling module work.tb_hw_cycles
+Built simulation snapshot tb_hwcyc_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Nov 20 17:43:32 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_hwcyc_snap/xsim_script.tcl
+# xsim {tb_hwcyc_snap} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+HWCYC samples=100000 detections RTL=341 golden=341 mismatches=0
+HWCYC hls_start_to_done  min=7 mean=7.000 max=7
+HWCYC filter_accept_to_decvalid min=10 mean=10.000 max=10
+HWCYC decision_decvalid_to_idle min=7 mean=7.997 max=8
+HWCYC decision_on_detect_samples n=341 mean=7.000 max=7
+HWCYC total_accept_to_idle   min=17 mean=17.997 max=18
+$finish called at time : 256008380 ns : File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/hwsw/tb_hw_cycles.v" Line 122
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Nov 20 17:43:37 2026...
+SIM_EXIT=0

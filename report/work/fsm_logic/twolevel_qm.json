@@ -1,0 +1,176 @@
+{
+ "VS": {
+  "on_minterms": 64,
+  "prime_implicants": 1,
+  "primes": [
+   "--11----"
+  ],
+  "essential_primes": [
+   "--11----"
+  ],
+  "table_initial(rows x cols)": [
+   64,
+   1
+  ],
+  "table_after_essentials(rows x cols)": [
+   0,
+   0
+  ],
+  "reduction_log": [
+   "essential: ['--11----']"
+  ],
+  "cyclic_core(rows x cols)": [
+   0,
+   0
+  ],
+  "cyclic_core_cols": [],
+  "branch_and_bound_picks": [],
+  "minimum_cover": [
+   "--11----"
+  ],
+  "products": 1,
+  "literals": 2,
+  "sop": "v&r",
+  "equals_espresso": true,
+  "project_greedy_minimise": [
+   "--11----"
+  ]
+ },
+ "VP": {
+  "on_minterms": 24,
+  "prime_implicants": 2,
+  "primes": [
+   "1--011--",
+   "1-0-11--"
+  ],
+  "essential_primes": [
+   "1--011--",
+   "1-0-11--"
+  ],
+  "table_initial(rows x cols)": [
+   24,
+   2
+  ],
+  "table_after_essentials(rows x cols)": [
+   0,
+   0
+  ],
+  "reduction_log": [
+   "essential: ['1--011--', '1-0-11--']"
+  ],
+  "cyclic_core(rows x cols)": [
+   0,
+   0
+  ],
+  "cyclic_core_cols": [],
+  "branch_and_bound_picks": [],
+  "minimum_cover": [
+   "1--011--",
+   "1-0-11--"
+  ],
+  "products": 2,
+  "literals": 8,
+  "sop": "p&~r&m&u | p&~v&m&u",
+  "equals_espresso": true,
+  "project_greedy_minimise": [
+   "1-0-11--",
+   "1--011--"
+  ]
+ },
+ "AS": {
+  "on_minterms": 24,
+  "prime_implicants": 2,
+  "primes": [
+   "01-0---0",
+   "010----0"
+  ],
+  "essential_primes": [
+   "01-0---0",
+   "010----0"
+  ],
+  "table_initial(rows x cols)": [
+   24,
+   2
+  ],
+  "table_after_essentials(rows x cols)": [
+   0,
+   0
+  ],
+  "reduction_log": [
+   "essential: ['01-0---0', '010----0']"
+  ],
+  "cyclic_core(rows x cols)": [
+   0,
+   0
+  ],
+  "cyclic_core_cols": [],
+  "branch_and_bound_picks": [],
+  "minimum_cover": [
+   "01-0---0",
+   "010----0"
+  ],
+  "products": 2,
+  "literals": 8,
+  "sop": "~p&a&~r&~b | ~p&a&~v&~b",
+  "equals_espresso": true,
+  "project_greedy_minimise": [
+   "010----0",
+   "01-0---0"
+  ]
+ },
+ "AP": {
+  "on_minterms": 36,
+  "prime_implicants": 4,
+  "primes": [
+   "0--0--11",
+   "0-0---11",
+   "00-0--1-",
+   "000---1-"
+  ],
+  "essential_primes": [
+   "0--0--11",
+   "0-0---11",
+   "00-0--1-",
+   "000---1-"
+  ],
+  "table_initial(rows x cols)": [
+   36,
+   4
+  ],
+  "table_after_essentials(rows x cols)": [
+   0,
+   0
+  ],
+  "reduction_log": [
+   "essential: ['0--0--11', '0-0---11', '00-0--1-', '000---1-']"
+  ],
+  "cyclic_core(rows x cols)": [
+   0,
+   0
+  ],
+  "cyclic_core_cols": [],
+  "branch_and_bound_picks": [],
+  "minimum_cover": [
+   "0--0--11",
+   "0-0---11",
+   "00-0--1-",
+   "000---1-"
+  ],
+  "products": 4,
+  "literals": 16,
+  "sop": "~p&~r&e&b | ~p&~v&e&b | ~p&~a&~r&e | ~p&~a&~v&e",
+  "equals_espresso": true,
+  "project_greedy_minimise": [
+   "0-0---11",
+   "00-0--1-",
+   "0--0--11",
+   "000---1-"
+  ]
+ },
+ "TOTAL": {
+  "products": 9,
+  "literals": 34,
+  "espresso_products": 9,
+  "espresso_literals": 34
+ }
+}

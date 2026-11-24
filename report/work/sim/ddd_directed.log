@@ -1,0 +1,45 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/ddd_pacemaker.v" into library work
+INFO: [VRFC 10-311] analyzing module ddd_pacemaker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/ddd_pacemaker_apb.v" into library work
+INFO: [VRFC 10-311] analyzing module ddd_pacemaker_apb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/tb_ddd_pacemaker.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_ddd_pacemaker
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_ddd_pacemaker -s tb_sim -debug off 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.ddd_pacemaker
+Compiling module work.ddd_pacemaker_apb
+Compiling module work.tb_ddd_pacemaker
+Built simulation snapshot tb_sim
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Nov 20 17:47:10 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_sim/xsim_script.tcl
+# xsim {tb_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+DDD params: LRI=1000 AVI=180 URI=500 PVARP=320 VRP=250
+  C:/Vivadoproject/P17_QRS_Pacemaker/rtl/tb_data/ddd_normal.txt : 6000 ticks, 0 mismatches
+  C:/Vivadoproject/P17_QRS_Pacemaker/rtl/tb_data/ddd_block.txt : 6000 ticks, 0 mismatches
+  C:/Vivadoproject/P17_QRS_Pacemaker/rtl/tb_data/ddd_dual.txt : 6000 ticks, 0 mismatches
+
+TOTAL mismatches: 0
+RTL BIT-EXACT PASS vs Python golden model
+$finish called at time : 360690 ns : File "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/tb_ddd_pacemaker.v" Line 113
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Nov 20 17:47:12 2026...
+XSIM_EXIT=0

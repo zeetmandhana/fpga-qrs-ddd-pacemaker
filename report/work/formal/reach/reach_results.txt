@@ -1,0 +1,5 @@
+ddd_oa         dd:  168 states in 10 image steps (T 258 nodes, R 21 nodes) | NuSMV: 168 states, diameter 11 -> MATCH
+ddd_pmt        dd:   26 states in 12 image steps (T 204 nodes, R 29 nodes) | NuSMV: 26 states, diameter 13 -> MATCH
+ddd_pmt_bug1   dd:   16 states in  7 image steps (T 225 nodes, R 26 nodes) | NuSMV: 16 states, diameter 8 -> MATCH
+ddd_oa_bug1    dd:  240 states in 10 image steps (T 286 nodes, R 23 nodes) | NuSMV: 240 states, diameter 11 -> MATCH
+ddd_oa_bug2    dd:  168 states in 10 image steps (T 229 nodes, R 21 nodes) | NuSMV: 168 states, diameter 11 -> MATCH

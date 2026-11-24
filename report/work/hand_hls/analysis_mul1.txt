@@ -1,0 +1,35 @@
+
+(a) transformations  (add = 1 step, mult = 1 step(s))
+| Version | #Mult | #Add/Sub | Critical path (steps) |
+|---|---|---|---|
+| Original direct form | 8 | 93 | 98 |
+| + strength reduction (x2, /8, /32 to shifts) | 2 | 93 | 94 |
+| + constant folding (1/N into thresholds) | 1 | 93 | 93 |
+| + running-sum recurrence (HPF, MWI) | 1 | 13 | 14 |
+| + tree-height reduction (final kernel) | 1 | 13 | 8 |
+
+(c) final DFG: 14 ops, latency bound L = 8
+| op | xc | u1 | u2 | u3 | lp | v1 | ms' | hp | w1 | w2 | dv | sq | m1 | mwi' |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ASAP | 1 | 1 | 1 | 2 | 3 | 1 | 4 | 5 | 1 | 2 | 6 | 7 | 1 | 8 |
+| ALAP | 2 | 1 | 1 | 2 | 3 | 3 | 4 | 5 | 4 | 5 | 6 | 7 | 7 | 8 |
+| Mobility | 1 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 3 | 3 | 0 | 0 | 6 | 0 |
+critical (mobility 0): ['u1', 'u2', 'u3', 'lp', "ms'", 'hp', 'dv', 'sq', "mwi'"]
+ASAP peak ALU usage: 6
+list scheduling 1 ALU + 1 MUL : 13 steps  {'u1': 1, 'u2': 2, 'xc': 3, 'u3': 4, 'lp': 5, 'v1': 6, "ms'": 7, 'w1': 8, 'hp': 9, 'w2': 10, 'dv': 11, 'sq': 12, 'm1': 12, "mwi'": 13}
+list scheduling 3 ALU + 1 MUL : 8 steps  {'u1': 1, 'u2': 1, 'xc': 1, 'u3': 2, 'v1': 2, 'w1': 2, 'lp': 3, 'w2': 3, 'm1': 3, "ms'": 4, 'hp': 5, 'dv': 6, 'sq': 7, "mwi'": 8}
+ILP time-constrained L=8: min ALUs = 2
+ILP time-constrained L=9: min ALUs = 2
+ILP time-constrained L=10: min ALUs = 2
+ILP time-constrained L=11: min ALUs = 2
+ILP time-constrained L=12: min ALUs = 2
+ILP time-constrained L=13: min ALUs = 1
+ILP resource-constrained (1 ALU, 1 MUL): min latency = 13
+ILP resource-constrained (2 ALU, 1 MUL): min latency = 8
+list scheduling 2 ALU + 1 MUL : 8 steps  {'u1': 1, 'u2': 1, 'xc': 2, 'u3': 2, 'lp': 3, 'v1': 3, "ms'": 4, 'w1': 4, 'hp': 5, 'w2': 5, 'dv': 6, 'm1': 6, 'sq': 7, "mwi'": 8}
+
+(d) left-edge, min-area  : 3 temp registers [['u1', 'u3', 'v1', 'w1', 'w2', 'sq'], ['u2', 'm1'], ['xc']]
+    left-edge, min-latency: 2 temp registers [['u1', 'xc', 'v1', 'w1', 'w2', 'm1'], ['u2', 'u3', 'sq']]
+    clique partitioning (min-latency): 2 ALUs [['xc', 'u1', 'lp', "ms'", 'hp', 'dv'], ['u2', 'u3', 'v1', 'w1', 'w2', 'm1', "mwi'"]] (13 nodes, 72 compatibility edges)
+
+wrote results.json and fig/cdfg, fig/schedule, fig/compat (.pdf/.png)

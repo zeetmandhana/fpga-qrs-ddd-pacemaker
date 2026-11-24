@@ -1,0 +1,12 @@
+Hardware (streaming integer) QRS detector vs Phase-2 float detector
+match tolerance +/-150 ms, whole records (30 min each)
+
+ rec  beats |  HW Se%  HW +P%    TP   FP   FN  sb |  FL Se%  FL +P% | lat ms mean/max
+ 100   2273 |   99.87  100.00  2270    0    3   0 |   99.96  100.00 | 211/222
+ 101   1865 |   99.84   99.79  1862    4    3   0 |   99.95   99.79 | 205/236
+ 106   2027 |   99.01  100.00  2007    0   20   3 |   98.57  100.00 | 222/1281
+ 208   2955 |   99.29   99.83  2934    5   21  38 |   97.66   99.59 | 230/881
+ 234   2753 |   99.78  100.00  2747    0    6   2 |   99.89  100.00 | 216/544
+
+GROSS  HW   : Se 99.55%  +P 99.92%  (TP 11820 FP 9 FN 53)
+GROSS  FLOAT: Se 99.13%  +P 99.86%  (TP 11770 FP 16 FN 103)

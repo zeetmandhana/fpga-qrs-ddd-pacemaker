@@ -1,0 +1,18 @@
+read_blif ep_synth.blif
+strash
+print_stats
+collapse
+sop
+print_stats -f
+write_eqn ep_abc_collapse.eqn
+fx
+print_stats -f
+write_eqn ep_abc_fx.eqn
+strash
+balance; rewrite; refactor; balance; rewrite; rewrite -z; balance; refactor -z; rewrite -z; balance
+print_stats
+
+renode
+sop
+print_stats -f
+write_eqn ep_abc_resyn2_renode.eqn

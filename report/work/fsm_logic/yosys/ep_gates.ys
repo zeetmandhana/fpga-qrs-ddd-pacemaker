@@ -1,0 +1,21 @@
+# Yosys + ABC on the espresso-derived event_priority.v (VL401 report Sec. 5.4)
+read_verilog event_priority.v
+synth -top event_priority -flatten
+opt_clean
+tee -o stat_synth.txt stat
+write_blif ep_synth.blif
+design -save base
+# 2-input AND/OR gates (+ inverters), the usual multilevel "literal" view
+abc -g AND,OR
+opt_clean
+tee -o stat_and_or.txt stat
+design -load base
+# richer gate set (AND/NAND/OR/NOR/XOR/XNOR/ANDNOT/ORNOT)
+abc -g cmos2
+opt_clean
+tee -o stat_cmos2.txt stat
+design -load base
+# 6-input LUT mapping (what an FPGA uses)
+abc -lut 6
+opt_clean
+tee -o stat_lut6.txt stat

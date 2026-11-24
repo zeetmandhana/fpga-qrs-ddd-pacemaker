@@ -1,0 +1,73 @@
+{
+ "VS": {
+  "sop": "vr",
+  "literals": 2,
+  "kernels": []
+ },
+ "VP": {
+  "sop": "pv'mu + pr'mu",
+  "literals": 8,
+  "kernels": [
+   {
+    "kernel": "v' + r'",
+    "co_kernel": "pmu",
+    "level": 0
+   }
+  ]
+ },
+ "AS": {
+  "sop": "p'av'b' + p'ar'b'",
+  "literals": 8,
+  "kernels": [
+   {
+    "kernel": "v' + r'",
+    "co_kernel": "p'ab'",
+    "level": 0
+   }
+  ]
+ },
+ "AP": {
+  "sop": "p'a'v'e + p'a'r'e + p'v'eb + p'r'eb",
+  "literals": 16,
+  "kernels": [
+   {
+    "kernel": "v' + r'",
+    "co_kernel": "p'a'e",
+    "level": 0
+   },
+   {
+    "kernel": "a' + b",
+    "co_kernel": "p'v'e",
+    "level": 0
+   },
+   {
+    "kernel": "a' + b",
+    "co_kernel": "p'r'e",
+    "level": 0
+   },
+   {
+    "kernel": "v' + r'",
+    "co_kernel": "p'eb",
+    "level": 0
+   },
+   {
+    "kernel": "a'v' + a'r' + v'b + r'b",
+    "co_kernel": "p'e",
+    "level": 1
+   }
+  ]
+ },
+ "SUMMARY": {
+  "literals_sop": 34,
+  "after_common_kernel_extraction": 18,
+  "extracted_network": {
+   "t4": "r' + v'",
+   "t5": "a' + b",
+   "VS": "r v",
+   "VP": "t4 m p u",
+   "AS": "t4 a b' p'",
+   "AP": "t4 t5 e p'"
+  },
+  "note": "t4 = r'+v' is algebraically a kernel; Boolean resubstitution sees t4 = VS' and t5*p'*t4 = AS'-related, which SIS script.rugged uses to reach 14 literals"
+ }
+}

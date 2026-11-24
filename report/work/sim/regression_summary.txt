@@ -1,0 +1,10 @@
+PASS   event_priority (256 vectors)           10.8 s  | EVENT_PRIORITY RTL == truth table : PASS
+PASS   DDD directed (3 x 6000 ticks)           5.9 s  | RTL BIT-EXACT PASS vs Python golden model
+PASS   closed loop (6 x 12000 ticks)           6.1 s  | CLOSED-LOOP BIT-EXACT PASS: 72000 ticks, hardware heart+pacemaker == Python
+PASS   DDD constrained random + 19 SVA        11.7 s  | RANDOM REGRESSION PASS
+PASS   DDD directed + closed loop + 19 SVA    13.0 s  | CLOSED-LOOP BIT-EXACT PASS: 72000 ticks, hardware heart+pacemaker == Python
+PASS   QRS detector (rec 100 + 208)           20.7 s  | BIT-EXACT PASS: 814 detections match the Python hardware model
+PASS   AXI4-Lite -> APB bridge                 8.1 s  | AXI-APB BRIDGE PASS
+PASS   VGA timing                              7.0 s  | VGA TIMING PASS (640x480 @ 60 Hz)
+PASS   baselines B0/B1 (100k samples)         10.7 s  | BASELINES BIT-EXACT PASS
+PASS   hand-HLS FSMDs (2 x 20k samples)       16.3 s  | BIT-EXACT PASS / BIT-EXACT PASS

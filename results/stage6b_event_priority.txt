@@ -1,0 +1,42 @@
+P17 Phase 6 -- Event-priority / timer-expiry logic block
+============================================================
+
+Inputs:
+  p = phase==AVI
+  a = a_in
+  v = v_in
+  r = t_v>=VRP
+  m = t_av>=AVI
+  u = t_v>=URI
+  e = t_v>=AEI
+  b = t_v<PVARP (blanked)
+Outputs: VS, VP, AS, AP   (priority VS > VP > AS > AP)
+
+Two-level (ESPRESSO-style) minimisation -- sum-of-products per output
+------------------------------------------------------------
+  VS: 64 minterms -> 1 product term(s), 2 literals
+       VS = v&r
+  VP: 24 minterms -> 2 product term(s), 8 literals
+       VP = p&~v&m&u | p&~r&m&u
+  AS: 24 minterms -> 2 product term(s), 8 literals
+       AS = ~p&a&~v&~b | ~p&a&~r&~b
+  AP: 36 minterms -> 4 product term(s), 16 literals
+       AP = ~p&~r&e&b | ~p&~v&e&b | ~p&~a&~v&e | ~p&~a&~r&e
+
+  minterms total 148 -> 9 product terms (two-level minimised).
+
+BDD representation (reduced ordered BDD; order: p a v r m u e b)
+------------------------------------------------------------
+  shared BDD internal nodes (4 outputs): 21
+    VS: 2 nodes
+    VP: 5 nodes
+    AS: 5 nodes
+    AP: 9 nodes
+  (ESPRESSO minimises two-level logic; a BDD is a canonical decision-
+   diagram representation -- different tools, both derived here.)
+
+Equivalence
+------------------------------------------------------------
+  minimised SOP  == truth table : PASS (all 256 input combinations)
+  BDD            == truth table : PASS (all 256 input combinations)
+  block          == pacemaker.py: PASS (1458912 timer/input states)

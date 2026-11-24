@@ -1,0 +1,31 @@
+vl401.py partition_refine on qrs_decision_ctrl.kiss2 (complete=True)
+
+  Pass 1: put states with the same OUTPUTS for every input in one group.
+    state  outputs for inputs 000 001 010 011 100 101 110 111
+    -----  -----------------------------------------------------------------------
+    IDL    00000000 00000000 00000000 00000000 10000000 10000000 10000000 10000000
+    TRK    01000000 01000000 01000000 01000000 01000000 01000000 01000000 01000000
+    CLS    00100000 00100000 00100000 00100000 00100000 00100000 00100000 00100000
+    REG    00010000 00010000 00010000 00010000 00010000 00010000 00010000 00010000
+    AVG    00001000 00001000 00001000 00001000 00001000 00001000 00001000 00001000
+    LIM    00000100 00000100 00000100 00000100 00000100 00000100 00000100 00000100
+    SBK    00000010 00000010 00000010 00000010 00000010 00000010 00000010 00000010
+    END    00000001 00000001 00000001 00000001 00000001 00000001 00000001 00000001
+  P1 = {IDL}  {TRK}  {CLS}  {REG}  {AVG}  {LIM}  {SBK}  {END}   (8 groups)
+
+  Pass 2: inside each group, compare which GROUP each next state is in (the signature).
+  Group names in P1: A={IDL}  B={TRK}  C={CLS}  D={REG}  E={AVG}  F={LIM}  G={SBK}  H={END}
+    state  group  input->next(group)                                                                               signature
+    -----  -----  -----------------------------------------------------------------------------------------------  -----------------
+    IDL    A      000->IDL(A) 001->IDL(A) 010->IDL(A) 011->IDL(A) 100->TRK(B) 101->TRK(B) 110->TRK(B) 111->TRK(B)  (A,A,A,A,B,B,B,B)
+    TRK    B      000->CLS(C) 001->CLS(C) 010->CLS(C) 011->CLS(C) 100->CLS(C) 101->CLS(C) 110->CLS(C) 111->CLS(C)  (C,C,C,C,C,C,C,C)
+    CLS    C      000->REG(D) 001->REG(D) 010->REG(D) 011->REG(D) 100->REG(D) 101->REG(D) 110->REG(D) 111->REG(D)  (D,D,D,D,D,D,D,D)
+    REG    D      000->AVG(E) 001->AVG(E) 010->AVG(E) 011->AVG(E) 100->AVG(E) 101->AVG(E) 110->AVG(E) 111->AVG(E)  (E,E,E,E,E,E,E,E)
+    AVG    E      000->LIM(F) 001->LIM(F) 010->LIM(F) 011->LIM(F) 100->LIM(F) 101->LIM(F) 110->LIM(F) 111->LIM(F)  (F,F,F,F,F,F,F,F)
+    LIM    F      000->SBK(G) 001->SBK(G) 010->END(H) 011->END(H) 100->SBK(G) 101->SBK(G) 110->END(H) 111->END(H)  (G,G,H,H,G,G,H,H)
+    SBK    G      000->END(H) 001->REG(D) 010->END(H) 011->REG(D) 100->END(H) 101->REG(D) 110->END(H) 111->REG(D)  (H,D,H,D,H,D,H,D)
+    END    H      000->IDL(A) 001->IDL(A) 010->IDL(A) 011->IDL(A) 100->IDL(A) 101->IDL(A) 110->IDL(A) 111->IDL(A)  (A,A,A,A,A,A,A,A)
+  P2 = {IDL}  {TRK}  {CLS}  {REG}  {AVG}  {LIM}  {SBK}  {END}   (8 groups)
+  No group split, so P2 = P1 and the method STOPS.
+
+Result: 8 classes for 8 states

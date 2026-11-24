@@ -1,0 +1,4 @@
+record 100
+n 20000
+baseline 1024
+mwi_window 54

@@ -1,0 +1,2 @@
+op                 LUT LUTRAM   FF  DSP CARRY datapath_ns  logic_ns  route_ns  levels
+op_lutram64         44     44   38    0    0     2.346     0.580     1.766       1

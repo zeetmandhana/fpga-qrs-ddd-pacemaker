@@ -1,0 +1,97 @@
+P17 -- event-priority / timer-expiry block minimized with the professor's kit
+=============================================================================
+Kit     : A2DSL "Digital Logic Synthesis Kit" v1.0 (Dr. Bikram Paul, IIT Mandi),
+          vl401.py + Berkeley SIS 1.4 / espresso (static Linux x86-64 binaries)
+Source  : https://a2dsl.iitmandi.ac.in/uploads/logic-synthesis-bda30098fbb5.zip
+          sha256 7647bceec200d203418bed8671f730fd33c7cfd6318f7d6854c5b8af7067cc63
+          (identical to the Logic_Synthesis.zip given by the professor)
+Run on  : Google Colab (the kit's Windows option), 2026-11-11, notebook in the
+          student's Google Drive. Python 3.13.18 on Linux x86_64.
+Input   : my_problems/event_priority.pla = results/stage6c_event_priority_kit.pla
+          8 inputs  p a v r m u e b, 4 outputs VS VP AS AP, 148 ON-set rows,
+          generated from src/event_priority.py (verified == pacemaker.py).
+          p = phase is AVI      a = atrial sense       v = ventricular sense
+          r = t_v >= VRP        m = t_av >= AVI         u = t_v >= URI
+          e = t_v >= AEI        b = atrial blanked (t_v < PVARP)
+Commands: python3 vl401.py check
+          python3 vl401.py twolevel my_problems/event_priority_nc.pla
+          python3 vl401.py twolevel my_problems/event_priority.pla --exact
+          python3 vl401.py multilevel my_problems/event_priority_min.sop
+
+##### vl401.py check #####
+  Python   : 3.13.18 on Linux x86_64
+  sis      : /content/VL401_Synthesis/bin/sis
+  espresso : /content/VL401_Synthesis/bin/espresso
+  stamina  : /content/VL401_Synthesis/bin/stamina
+  nova     : /content/VL401_Synthesis/bin/nova
+  jedi     : /content/VL401_Synthesis/bin/jedi
+  espresso test: a+b -> 2 products  OK
+  stamina test : 3 states -> 2  OK
+  nova test    : OK
+  sis_lib      : OK
+  All tools work.
+
+##### LAB 3  TWO-LEVEL (SOP) MINIMIZATION WITH ESPRESSO  (event_priority_nc.pla) #####
+ STEP 1  148 input rows given (1 = ON, rows not listed = 0)
+ STEP 2  Minimized by espresso
+     1--011-- 0100     = pr'mu
+     01-0---0 0010     = p'ar'b'
+     1-0-11-- 0100     = pv'mu
+     00-0--1- 0001     = p'a'r'e
+     010----0 0010     = p'av'b'
+     0-0---11 0001     = p'v'eb
+     --11---- 1000     = vr
+     000---1- 0001     = p'a'v'e
+     0--0--11 0001     = p'r'eb
+
+  VS = vr
+  VP = pr'mu + pv'mu
+  AS = p'ar'b' + p'av'b'
+  AP = p'a'r'e + p'v'eb + p'a'v'e + p'r'eb
+
+ STEP 3  Summary                           products  literals
+  truth table (one product per input row)  148       1184
+  minimized by espresso                    9         34
+
+##### --exact (guaranteed minimum) #####
+  VS = vr
+  VP = pv'mu + pr'mu
+  AS = p'av'b' + p'ar'b'
+  AP = p'a'v'e + p'a'r'e + p'v'eb + p'r'eb
+  minimized by espresso (exact)            9         34
+  -> the heuristic espresso result is already the exact minimum.
+  (This run kept a comment line in the .pla, which the kit listed as a 149th
+   row; espresso ignores '#' lines, the clean 148-row run above gives the same
+   9 products / 34 literals.)
+
+##### LAB 4  MULTI-LEVEL OPTIMIZATION (SIS)  (event_priority_min.sop = espresso result) #####
+ STEP 1  literals as sum of products = 34,  as best factored form = 18
+ STEP 2  Factored form of each output
+     VS = r v
+     VP = m p u (v' + r')
+     AS = a b' p' (v' + r')
+     AP = e p' (v' + r') (b + a')
+ STEP 3  Kernels: VP kernel r'+v' (co-kernel mpu); AS kernel r'+v' (co-kernel ab'p');
+          AP kernels b+a' (co-kernels ep'v', ep'r'), r'+v' (a'ep', bep'),
+          br'+bv'+a'r'+a'v' (ep', level 1)
+ STEP 4  Kernel extraction (gkx)
+     VS = r v      VP = t4 m p u      AS = t4 a b' p'      AP = t4 t5 e p'
+     t4 = r' + v'  t5 = a' + b
+ STEP 5  Cube extraction (gcx)
+     t4 = e p'   t5 = a b' p'   t6 = m p u
+ STEP 6  Full SIS optimization script (script.rugged)
+     VS = r v
+     VP = VS' m p u
+     AS = VS' a b' p'
+     AP = VS' AS' e p'
+ STEP 7  Summary                   literals (sop)
+  input (SOP)                      34
+  after kernel extraction (gkx)    18
+  after cube extraction (gcx)      30
+  after script.rugged              14
+
+Interpretation: espresso's two-level cover (9 AND gates, 34 literals) is the
+exact minimum. SIS script.rugged rebuilds the priority chain VS > VP/AS > AP
+(VS' gates the lower-priority outputs, AS' gates AP) in 14 literals -- the
+same structure the pacemaker specification states. Note VP = VS' m p u needs
+no VP' term in AS/AP because VP requires p while AS/AP require p'.

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<counter-example type="0" id="1" desc="CTL Counterexample" >
+	<node>
+		<state id="1">
+			<value variable="phase">PH_AEI</value>
+			<value variable="t_v">10</value>
+			<value variable="t_av">0</value>
+			<value variable="tick">FALSE</value>
+			<value variable="a">FALSE</value>
+			<value variable="v">FALSE</value>
+			<value variable="CHECK_VRP">FALSE</value>
+			<value variable="ENFORCE_PVARP">TRUE</value>
+			<value variable="AEI">8</value>
+			<value variable="VA">3</value>
+			<value variable="VRP">3</value>
+			<value variable="PVARP">4</value>
+			<value variable="URI">5</value>
+			<value variable="AVI_T">2</value>
+			<value variable="LRI">10</value>
+			<value variable="slow_vbeat">FALSE</value>
+			<value variable="upper">FALSE</value>
+			<value variable="Vbeat">FALSE</value>
+			<value variable="AP">FALSE</value>
+			<value variable="AS">FALSE</value>
+			<value variable="blanked">FALSE</value>
+			<value variable="VP">FALSE</value>
+			<value variable="VS">FALSE</value>
+			<value variable="tav">0</value>
+			<value variable="tv">11</value>
+		</state>
+	</node>
+	<node>
+		<state id="2">
+			<value variable="phase">PH_AEI</value>
+			<value variable="t_v">10</value>
+			<value variable="t_av">0</value>
+			<value variable="tick">TRUE</value>
+			<value variable="a">FALSE</value>
+			<value variable="v">TRUE</value>
+			<value variable="CHECK_VRP">FALSE</value>
+			<value variable="ENFORCE_PVARP">TRUE</value>
+			<value variable="AEI">8</value>
+			<value variable="VA">3</value>
+			<value variable="VRP">3</value>
+			<value variable="PVARP">4</value>
+			<value variable="URI">5</value>
+			<value variable="AVI_T">2</value>
+			<value variable="LRI">10</value>
+			<value variable="slow_vbeat">TRUE</value>
+			<value variable="upper">FALSE</value>
+			<value variable="Vbeat">TRUE</value>
+			<value variable="AP">FALSE</value>
+			<value variable="AS">FALSE</value>
+			<value variable="blanked">FALSE</value>
+			<value variable="VP">FALSE</value>
+			<value variable="VS">TRUE</value>
+			<value variable="tav">0</value>
+			<value variable="tv">11</value>
+		</state>
+	</node>
+	<node>
+		<state id="3">
+			<value variable="phase">PH_AEI</value>
+			<value variable="t_v">0</value>
+			<value variable="t_av">0</value>
+			<value variable="tick">TRUE</value>
+			<value variable="a">FALSE</value>
+			<value variable="v">TRUE</value>
+			<value variable="CHECK_VRP">FALSE</value>
+			<value variable="ENFORCE_PVARP">TRUE</value>
+			<value variable="AEI">8</value>
+			<value variable="VA">3</value>
+			<value variable="VRP">3</value>
+			<value variable="PVARP">4</value>
+			<value variable="URI">5</value>
+			<value variable="AVI_T">2</value>
+			<value variable="LRI">10</value>
+			<value variable="slow_vbeat">FALSE</value>
+			<value variable="upper">TRUE</value>
+			<value variable="Vbeat">TRUE</value>
+			<value variable="AP">FALSE</value>
+			<value variable="AS">FALSE</value>
+			<value variable="blanked">TRUE</value>
+			<value variable="VP">FALSE</value>
+			<value variable="VS">TRUE</value>
+			<value variable="tav">0</value>
+			<value variable="tv">1</value>
+		</state>
+	</node>
+	<loops> </loops>
+</counter-example>

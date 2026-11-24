@@ -1,0 +1,31 @@
+{
+  "oa_states": 22,
+  "pmt_safe_states": 13,
+  "pmt_bug_states": 16,
+  "safety_never_ap_and_vp": true,
+  "liveness_v_always_beats": true,
+  "pmt_safe_bounded_rate": true,
+  "pmt_bug_bounded_rate": false,
+  "pmt_counterexample": {
+    "stem": [
+      "phase=AEI t_v=0  t_av=0  event=-    ",
+      "phase=AEI t_v=1  t_av=0  event=-    ",
+      "phase=AEI t_v=2  t_av=0  event=-    ",
+      "phase=AEI t_v=3  t_av=0  event=-    ",
+      "phase=AEI t_v=4  t_av=0  event=-    ",
+      "phase=AEI t_v=5  t_av=0  event=-    ",
+      "phase=AEI t_v=6  t_av=0  event=-    ",
+      "phase=AEI t_v=7  t_av=0  event=-    ",
+      "phase=AVI t_v=8  t_av=0  event=AP   ",
+      "phase=AVI t_v=9  t_av=1  event=-    ",
+      "phase=AEI t_v=0  t_av=0  event=VP   "
+    ],
+    "cycle": [
+      "phase=AEI t_v=1  t_av=0  event=-    ",
+      "phase=AEI t_v=2  t_av=0  event=-    ",
+      "phase=AVI t_v=3  t_av=0  event=AS   ",
+      "phase=AVI t_v=4  t_av=1  event=-    ",
+      "phase=AEI t_v=0  t_av=0  event=VP    [UPPER-RATE]"
+    ]
+  }
+}

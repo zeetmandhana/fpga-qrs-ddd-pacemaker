@@ -1,0 +1,4 @@
+top LUT LUTRAM FF DSP BRAM WNS_ns Fmax_MHz
+qrs_base_thr 22 0 73 0 0 6.092 255.9
+qrs_base_mwi 470 298 619 0 0 2.658 136.2
+qrs_detector 4054 298 2385 0 0 -0.421 96.0

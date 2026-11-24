@@ -1,0 +1,23 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_qd_ctrl glbl -L unisims_ver -s tbn_custom_min 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.LUT4(INIT=16'b0100)
+Compiling module unisims_ver.LUT6(INIT=64'b011001100010000101...
+Compiling module unisims_ver.LUT5(INIT=32'b011100001111000000...
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2(INIT=4'b1000)
+Compiling module unisims_ver.FDRE_default
+Compiling module work.qd_ctrl
+Compiling module work.tb_qd_ctrl
+Compiling module work.glbl
+Built simulation snapshot tbn_custom_min

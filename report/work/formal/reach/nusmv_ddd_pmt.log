@@ -1,0 +1,30 @@
+*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2025, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+######################################################################
+system diameter: 13
+reachable states: 26 (2^4.70044) out of 1056 (2^10.0444)
+######################################################################
+The computation of reachable states has been completed.
+The diameter of the FSM is 13.
+Statistics on BDD FSM machine.
+BDD nodes representing init set of states: 11
+BDD nodes representing state constraints: 1
+BDD nodes representing input constraints: 1
+Forward Partitioning Schedule BDD cluster size (#nodes):
+cluster 1	:	size 183
+Backward Partitioning Schedule BDD cluster size (#nodes):
+cluster 1	:	size 183

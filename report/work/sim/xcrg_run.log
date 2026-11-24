@@ -1,0 +1,26 @@
+
+ Options Set are : 
+
+   Command Line               : xcrg -cc_db rand_cov -cc_dir ./cov/xsim.codeCov -report_format text -report_dir ./cov_rpt
+   Report Format              : text
+   Log File                   : xcrg.log
+   Code Coverage Dir[s]       : ./cov/xsim.codeCov
+   Code Coverage DB[s]        : rand_cov
+
+
+********************************************************
+                  Code Coverage Report 
+********************************************************
+
+ Restoring Code Coverage DB[s] from : 
+  1	./cov/xsim.codeCov/rand_cov/xsim.CCInfo
+
+ WARNING : Text based reporting is not supported for Code Coverage yet. Proceeding with generation of HTML based code coverage report. 
+
+ Code Coverage HTML Report directory              : ./cov_rpt/codeCoverageReport
+
+ Line Coverage Score 99.0385
+ Branch Coverage Score 85.7143
+ Condition Coverage Score 75.4902
+ Toggle Coverage Score 36.91
+

@@ -1,0 +1,60 @@
+# Python and local tools
+.venv/
+__pycache__/
+.pytest_cache/
+tools/*
+!tools/plot_ila_ecg.py
+
+# Generated EDA projects and simulator output (recreated by the scripts)
+.Xil/
+xsim.dir/
+vivado/p17_*/
+hls/_ide/
+hls/logs/
+hls/qrs_filter/
+hls/qrs_filter_hls/
+hls/qrs_filter_z7/
+hls/qrs_stream_hls/
+rtl/firmware/build/
+report/work/hwsw/fw/build/
+report/work/formal/sby/ddd*/
+report/work/formal/replay/sim_*/
+report/work/sim/cov/
+*.log
+*.jou
+*.pb
+*.wdb
+*.dcp
+*.o
+*.ppm
+*.ila
+*.vcd
+*.out
+dfx_runtime.txt
+clockInfo.txt
+*backup*
+
+# Bitstreams: keep only the final one
+*.bit
+*.ltx
+!vivado/zybo_reports/p17_soc_ila.bit
+!vivado/zybo_reports/p17_soc_ila.ltx
+
+# LaTeX build files, packaged zips, course template, private notes
+*.aux
+*.toc
+report/VL401_G17_P17/build.log
+report/*.zip
+report/_template_original/
+deliverables/
+P17_TA_DEMO_GUIDE.*
+
+# Other untracked leftovers
+hls/.gitignore
+neorv32_ip/**/.gitignore
+neorv32_ip/rtl/*.f
+neorv32_ip/rtl/*.sh
+neorv32_ip/rtl/verilog/Makefile
+report/VL401_G17_P17/figures_src/*.pdf
+report/VL401_G17_P17/figures_src/*.png
+vivado/zybo_reports/ip_status_before_rebuild.txt

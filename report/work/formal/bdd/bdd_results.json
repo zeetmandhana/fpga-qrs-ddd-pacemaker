@@ -1,0 +1,147 @@
+{
+ "orders": [
+  {
+   "ordering": "natural p,a,v,r,m,u,e,b",
+   "classical": 23,
+   "dd": 21
+  },
+  {
+   "ordering": "reversed b,e,u,m,r,v,a,p",
+   "classical": 22,
+   "dd": 20
+  },
+  {
+   "ordering": "timers first e,b,u,m,r,p,a,v",
+   "classical": 26,
+   "dd": 22
+  },
+  {
+   "ordering": "exhaustive best a,m,u,b,e,p,v,r",
+   "classical": 15,
+   "dd": 12
+  },
+  {
+   "ordering": "exhaustive worst v,a,p,m,u,e,r,b",
+   "classical": 32,
+   "dd": 29
+  }
+ ],
+ "sifting": [
+  {
+   "start": "natural",
+   "dd_before": 21,
+   "dd_after": 15,
+   "order_after": "p,a,b,e,r,v,u,m",
+   "classical_after": 18
+  },
+  {
+   "start": "worst",
+   "dd_before": 29,
+   "dd_after": 17,
+   "order_after": "u,v,r,a,b,m,e,p",
+   "classical_after": 19
+  }
+ ],
+ "exhaustive_seconds": 45.8,
+ "histogram_classical": {
+  "15": 240,
+  "16": 600,
+  "17": 872,
+  "18": 1456,
+  "19": 1648,
+  "20": 3472,
+  "21": 3048,
+  "22": 3792,
+  "23": 4640,
+  "24": 5152,
+  "25": 3448,
+  "26": 2496,
+  "27": 2528,
+  "28": 2704,
+  "29": 1400,
+  "30": 1496,
+  "31": 720,
+  "32": 608
+ },
+ "best": [
+  15,
+  "a,m,u,b,e,p,v,r"
+ ],
+ "worst": [
+  32,
+  "v,a,p,m,u,e,r,b"
+ ],
+ "equivalence": [
+  {
+   "impl": "truth table (src/event_priority.py)",
+   "nodes": {
+    "VS": 9,
+    "VP": -629,
+    "AS": -902,
+    "AP": -1160
+   },
+   "equal": true
+  },
+  {
+   "impl": "espresso SOP (9 products, kit)",
+   "nodes": {
+    "VS": 9,
+    "VP": -629,
+    "AS": -902,
+    "AP": -1160
+   },
+   "equal": true
+  },
+  {
+   "impl": "factored form (kit STEP 1)",
+   "nodes": {
+    "VS": 9,
+    "VP": -629,
+    "AS": -902,
+    "AP": -1160
+   },
+   "equal": true
+  },
+  {
+   "impl": "SIS gkx kernels t4=v'+r', t5=b+a'",
+   "nodes": {
+    "VS": 9,
+    "VP": -629,
+    "AS": -902,
+    "AP": -1160
+   },
+   "equal": true
+  },
+  {
+   "impl": "SIS script.rugged (14 literals)",
+   "nodes": {
+    "VS": 9,
+    "VP": -629,
+    "AS": -902,
+    "AP": -1160
+   },
+   "equal": true
+  },
+  {
+   "impl": "RTL rtl/event_priority.v (parsed)",
+   "nodes": {
+    "VS": 9,
+    "VP": -629,
+    "AS": -902,
+    "AP": -1160
+   },
+   "equal": true
+  },
+  {
+   "impl": "Yosys + ABC netlist (BLIF)",
+   "nodes": {
+    "VS": 9,
+    "VP": -629,
+    "AS": -902,
+    "AP": -1160
+   },
+   "equal": true
+  }
+ ],
+ "n_best_orders": 240
+}

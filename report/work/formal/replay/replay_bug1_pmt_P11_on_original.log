@@ -1,0 +1,71 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Nov 20 18:02:07 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/snap/xsim_script.tcl
+# xsim {snap} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+ cyc tick a v | RTL phase t_v t_av | out AP VP AS VS arr | trace AP VP AS VS
+   0   0  0 0 |     0   10    0  |      0  0  0  0  0  |        0  0  0  0               
+   1   1  0 0 |     0   10    0  |      1  0  0  0  0  |        1  0  0  0               
+   2   1  0 0 |     1   11    0  |      0  0  0  0  0  |        0  0  0  0               
+   3   1  0 0 |     1   11    1  |      0  1  0  0  0  |        0  1  0  0               
+   4   0  0 0 |     0    0    0  |      0  0  0  0  0  |        0  0  0  0               
+   5   1  0 0 |     0    0    0  |      0  0  0  0  0  |        0  0  0  0               
+   6   1  0 0 |     0    1    0  |      0  0  0  0  0  |        0  0  0  0               
+   7   1  1 0 |     0    2    0  |      0  0  0  0  0  |        0  0  1  0   <-- MISMATCH
+      reg mismatch @8: RTL phase 0 t_v 3 t_av 0  vs trace 1 3 0
+   8   1  0 0 |     0    3    0  |      0  0  0  0  0  |        0  0  0  0               
+      reg mismatch @9: RTL phase 0 t_v 4 t_av 0  vs trace 1 4 1
+   9   1  0 0 |     0    4    0  |      0  0  0  0  0  |        0  1  0  0   <-- MISMATCH
+      reg mismatch @10: RTL phase 0 t_v 5 t_av 0  vs trace 0 0 0
+  10   0  0 0 |     0    5    0  |      0  0  0  0  0  |        0  0  0  0               
+      reg mismatch @11: RTL phase 0 t_v 5 t_av 0  vs trace 0 0 0
+  11   1  0 0 |     0    5    0  |      0  0  0  0  0  |        0  0  0  0               
+      reg mismatch @12: RTL phase 0 t_v 6 t_av 0  vs trace 0 1 0
+  12   1  0 0 |     0    6    0  |      0  0  0  0  0  |        0  0  0  0               
+      reg mismatch @13: RTL phase 0 t_v 7 t_av 0  vs trace 0 2 0
+  13   1  1 0 |     0    7    0  |      0  0  1  0  0  |        0  0  1  0               
+      reg mismatch @14: RTL phase 1 t_v 8 t_av 0  vs trace 1 3 0
+  14   1  0 0 |     1    8    0  |      0  0  0  0  0  |        0  0  0  0               
+      reg mismatch @15: RTL phase 1 t_v 9 t_av 1  vs trace 1 4 1
+  15   1  0 0 |     1    9    1  |      0  1  0  0  0  |        0  1  0  0               
+  16   0  0 0 |     0    0    0  |      0  0  0  0  0  |        0  0  0  0               
+  17   1  0 0 |     0    0    0  |      0  0  0  0  0  |        0  0  0  0               
+  18   1  0 0 |     0    1    0  |      0  0  0  0  0  |        0  0  0  0               
+  19   1  1 0 |     0    2    0  |      0  0  0  0  0  |        0  0  1  0   <-- MISMATCH
+      reg mismatch @20: RTL phase 0 t_v 3 t_av 0  vs trace 1 3 0
+  20   1  0 0 |     0    3    0  |      0  0  0  0  0  |        0  0  0  0               
+      reg mismatch @21: RTL phase 0 t_v 4 t_av 0  vs trace 1 4 1
+  21   1  0 0 |     0    4    0  |      0  0  0  0  0  |        0  1  0  0   <-- MISMATCH
+      reg mismatch @22: RTL phase 0 t_v 5 t_av 0  vs trace 0 0 0
+  22   0  0 0 |     0    5    0  |      0  0  0  0  0  |        0  0  0  0               
+      reg mismatch @23: RTL phase 0 t_v 5 t_av 0  vs trace 0 0 0
+  23   1  0 0 |     0    5    0  |      0  0  0  0  0  |        0  0  0  0               
+      reg mismatch @24: RTL phase 0 t_v 6 t_av 0  vs trace 0 1 0
+  24   1  0 0 |     0    6    0  |      0  0  0  0  0  |        0  0  0  0               
+      reg mismatch @25: RTL phase 0 t_v 7 t_av 0  vs trace 0 2 0
+  25   1  1 0 |     0    7    0  |      0  0  1  0  0  |        0  0  1  0               
+      reg mismatch @26: RTL phase 1 t_v 8 t_av 0  vs trace 1 3 0
+  26   1  0 0 |     1    8    0  |      0  0  0  0  0  |        0  0  0  0               
+      reg mismatch @27: RTL phase 1 t_v 9 t_av 1  vs trace 1 4 1
+  27   1  0 0 |     1    9    1  |      0  1  0  0  0  |        0  1  0  0               
+  28   0  0 0 |     0    0    0  |      0  0  0  0  0  |        0  0  0  0               
+  29   1  0 0 |     0    0    0  |      0  0  0  0  0  |        0  0  0  0               
+  30   1  0 0 |     0    1    0  |      0  0  0  0  0  |        0  0  0  0               
+  31   1  1 0 |     0    2    0  |      0  0  0  0  0  |        0  0  1  0   <-- MISMATCH
+      reg mismatch @32: RTL phase 0 t_v 3 t_av 0  vs trace 1 3 0
+  32   1  0 0 |     0    3    0  |      0  0  0  0  0  |        0  0  0  0               
+      reg mismatch @33: RTL phase 0 t_v 4 t_av 0  vs trace 1 4 1
+  33   1  0 0 |     0    4    0  |      0  0  0  0  0  |        0  1  0  0   <-- MISMATCH
+REPLAY stim.txt: 34 cycles, output mismatches 6, register mismatches 18, first mismatch at cycle 7
+MONITORS: AS inside PVARP = 0, VS inside VRP = 0, V beats = 3 of which at upper rate = 0
+$finish called at time : 366 ns : File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/formal/replay/tb_replay_ddd_pacemaker.v" Line 76
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Nov 20 18:02:09 2026...

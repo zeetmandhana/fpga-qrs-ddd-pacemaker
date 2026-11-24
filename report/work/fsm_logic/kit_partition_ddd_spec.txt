@@ -1,0 +1,12 @@
+vl401.py partition_refine (professor's kit, pure-Python step 2 of 'minimize'),
+run on Windows by importing the kit; STAMINA (step 3) needs the Linux binary.
+File: ddd_spec_complete.kiss2, complete=True
+
+  Pass 1: put states with the same OUTPUTS for every input in one group.
+  P1 = {VRF,PVA,VRO,ALR}  {AVD,URW}   (2 groups)
+
+  Pass 2: inside each group, compare which GROUP each next state is in (the signature).
+  P2 = {VRF,PVA,VRO,ALR}  {AVD,URW}   (2 groups)
+  No group split, so P2 = P1 and the method STOPS.
+
+Result classes: [['VRF', 'PVA', 'VRO', 'ALR'], ['AVD', 'URW']]

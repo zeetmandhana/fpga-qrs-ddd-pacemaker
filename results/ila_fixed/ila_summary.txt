@@ -1,0 +1,9 @@
+Zybo Z7-10 ILA captures (one entry per 360 Hz ECG sample)
+
+s1_mitbih_replay       mode=0 samples=8192 (22.8 s) contiguous=True HR=74.0 bpm QRS=28 AP=0 VP=0 AS=0 VS=28
+s2_normal_sinus        mode=1 samples=8192 (22.8 s) contiguous=True HR=75.0 bpm QRS=28 AP=0 VP=0 AS=29 VS=29
+s3_sinus_brady         mode=2 samples=8192 (22.8 s) contiguous=True HR=61.9 bpm QRS=24 AP=23 VP=0 AS=0 VS=24
+s4_av_block            mode=3 samples=8192 (22.8 s) contiguous=True HR=75.0 bpm QRS=28 AP=0 VP=28 AS=29 VS=0
+s5_av_block_brady      mode=4 samples=8192 (22.8 s) contiguous=True HR=60.0 bpm QRS=23 AP=22 VP=23 AS=0 VS=0
+s6_pmt_guard_off       mode=5 samples=8192 (22.8 s) contiguous=True HR=120.0 bpm QRS=46 AP=0 VP=45 AS=46 VS=0
+s6_pmt_guard_on        mode=5 samples=8192 (22.8 s) contiguous=True HR=60.0 bpm QRS=23 AP=22 VP=23 AS=0 VS=0

@@ -1,0 +1,534 @@
+{
+ "mul_steps": 1,
+ "transformations": [
+  {
+   "version": "Original direct form",
+   "mult": 8,
+   "addsub": 93,
+   "cp_steps": 98
+  },
+  {
+   "version": "+ strength reduction (x2, /8, /32 to shifts)",
+   "mult": 2,
+   "addsub": 93,
+   "cp_steps": 94
+  },
+  {
+   "version": "+ constant folding (1/N into thresholds)",
+   "mult": 1,
+   "addsub": 93,
+   "cp_steps": 93
+  },
+  {
+   "version": "+ running-sum recurrence (HPF, MWI)",
+   "mult": 1,
+   "addsub": 13,
+   "cp_steps": 14
+  },
+  {
+   "version": "+ tree-height reduction (final kernel)",
+   "mult": 1,
+   "addsub": 13,
+   "cp_steps": 8
+  }
+ ],
+ "asap_alap": {
+  "xc": {
+   "asap": 1,
+   "alap": 2,
+   "mobility": 1
+  },
+  "u1": {
+   "asap": 1,
+   "alap": 1,
+   "mobility": 0
+  },
+  "u2": {
+   "asap": 1,
+   "alap": 1,
+   "mobility": 0
+  },
+  "u3": {
+   "asap": 2,
+   "alap": 2,
+   "mobility": 0
+  },
+  "lp": {
+   "asap": 3,
+   "alap": 3,
+   "mobility": 0
+  },
+  "v1": {
+   "asap": 1,
+   "alap": 3,
+   "mobility": 2
+  },
+  "ms'": {
+   "asap": 4,
+   "alap": 4,
+   "mobility": 0
+  },
+  "hp": {
+   "asap": 5,
+   "alap": 5,
+   "mobility": 0
+  },
+  "w1": {
+   "asap": 1,
+   "alap": 4,
+   "mobility": 3
+  },
+  "w2": {
+   "asap": 2,
+   "alap": 5,
+   "mobility": 3
+  },
+  "dv": {
+   "asap": 6,
+   "alap": 6,
+   "mobility": 0
+  },
+  "sq": {
+   "asap": 7,
+   "alap": 7,
+   "mobility": 0
+  },
+  "m1": {
+   "asap": 1,
+   "alap": 7,
+   "mobility": 6
+  },
+  "mwi'": {
+   "asap": 8,
+   "alap": 8,
+   "mobility": 0
+  }
+ },
+ "critical_ops": [
+  "u1",
+  "u2",
+  "u3",
+  "lp",
+  "ms'",
+  "hp",
+  "dv",
+  "sq",
+  "mwi'"
+ ],
+ "asap_peak_alu": 6,
+ "list_A": {
+  "res": {
+   "add": 1,
+   "mul": 1
+  },
+  "latency": 13,
+  "sched": {
+   "u1": 1,
+   "u2": 2,
+   "xc": 3,
+   "u3": 4,
+   "lp": 5,
+   "v1": 6,
+   "ms'": 7,
+   "w1": 8,
+   "hp": 9,
+   "w2": 10,
+   "dv": 11,
+   "sq": 12,
+   "m1": 12,
+   "mwi'": 13
+  }
+ },
+ "list_B": {
+  "res": {
+   "add": 3,
+   "mul": 1
+  },
+  "latency": 8,
+  "sched": {
+   "u1": 1,
+   "u2": 1,
+   "xc": 1,
+   "u3": 2,
+   "v1": 2,
+   "w1": 2,
+   "lp": 3,
+   "w2": 3,
+   "m1": 3,
+   "ms'": 4,
+   "hp": 5,
+   "dv": 6,
+   "sq": 7,
+   "mwi'": 8
+  }
+ },
+ "ilp_time": [
+  {
+   "latency": 8,
+   "min_alu": 2,
+   "sched": {
+    "xc": 2,
+    "u1": 1,
+    "u2": 1,
+    "u3": 2,
+    "lp": 3,
+    "v1": 3,
+    "ms'": 4,
+    "hp": 5,
+    "w1": 4,
+    "w2": 5,
+    "dv": 6,
+    "sq": 7,
+    "m1": 6,
+    "mwi'": 8
+   }
+  },
+  {
+   "latency": 9,
+   "min_alu": 2,
+   "sched": {
+    "xc": 2,
+    "u1": 1,
+    "u2": 1,
+    "u3": 2,
+    "lp": 3,
+    "v1": 3,
+    "ms'": 4,
+    "hp": 5,
+    "w1": 4,
+    "w2": 6,
+    "dv": 7,
+    "sq": 8,
+    "m1": 7,
+    "mwi'": 9
+   }
+  },
+  {
+   "latency": 10,
+   "min_alu": 2,
+   "sched": {
+    "xc": 3,
+    "u1": 1,
+    "u2": 1,
+    "u3": 2,
+    "lp": 4,
+    "v1": 3,
+    "ms'": 5,
+    "hp": 6,
+    "w1": 6,
+    "w2": 7,
+    "dv": 8,
+    "sq": 9,
+    "m1": 9,
+    "mwi'": 10
+   }
+  },
+  {
+   "latency": 11,
+   "min_alu": 2,
+   "sched": {
+    "xc": 3,
+    "u1": 2,
+    "u2": 1,
+    "u3": 4,
+    "lp": 5,
+    "v1": 6,
+    "ms'": 7,
+    "hp": 8,
+    "w1": 7,
+    "w2": 8,
+    "dv": 9,
+    "sq": 10,
+    "m1": 10,
+    "mwi'": 11
+   }
+  },
+  {
+   "latency": 12,
+   "min_alu": 2,
+   "sched": {
+    "xc": 3,
+    "u1": 1,
+    "u2": 1,
+    "u3": 2,
+    "lp": 4,
+    "v1": 2,
+    "ms'": 5,
+    "hp": 6,
+    "w1": 3,
+    "w2": 6,
+    "dv": 7,
+    "sq": 8,
+    "m1": 8,
+    "mwi'": 9
+   }
+  },
+  {
+   "latency": 13,
+   "min_alu": 1,
+   "sched": {
+    "xc": 2,
+    "u1": 1,
+    "u2": 3,
+    "u3": 4,
+    "lp": 6,
+    "v1": 5,
+    "ms'": 7,
+    "hp": 9,
+    "w1": 8,
+    "w2": 10,
+    "dv": 11,
+    "sq": 12,
+    "m1": 12,
+    "mwi'": 13
+   }
+  }
+ ],
+ "ilp_min_latency_1alu": 13,
+ "ilp_min_latency_2alu": 8,
+ "list_minlat": {
+  "res": {
+   "add": 2,
+   "mul": 1
+  },
+  "latency": 8,
+  "sched": {
+   "u1": 1,
+   "u2": 1,
+   "xc": 2,
+   "u3": 2,
+   "lp": 3,
+   "v1": 3,
+   "ms'": 4,
+   "w1": 4,
+   "hp": 5,
+   "w2": 5,
+   "dv": 6,
+   "m1": 6,
+   "sq": 7,
+   "mwi'": 8
+  }
+ },
+ "left_edge": {
+  "A": {
+   "life": {
+    "xc": [
+     4,
+     5
+    ],
+    "u1": [
+     2,
+     4
+    ],
+    "u2": [
+     3,
+     4
+    ],
+    "u3": [
+     5,
+     5
+    ],
+    "lp": [
+     6,
+     7
+    ],
+    "v1": [
+     7,
+     7
+    ],
+    "ms'": [
+     8,
+     9
+    ],
+    "hp": [
+     10,
+     11
+    ],
+    "w1": [
+     9,
+     10
+    ],
+    "w2": [
+     11,
+     11
+    ],
+    "dv": [
+     12,
+     12
+    ],
+    "sq": [
+     13,
+     13
+    ],
+    "m1": [
+     13,
+     13
+    ]
+   },
+   "regs": [
+    [
+     "u1",
+     "u3",
+     "v1",
+     "w1",
+     "w2",
+     "sq"
+    ],
+    [
+     "u2",
+     "m1"
+    ],
+    [
+     "xc"
+    ]
+   ]
+  },
+  "B": {
+   "life": {
+    "xc": [
+     3,
+     3
+    ],
+    "u1": [
+     2,
+     2
+    ],
+    "u2": [
+     2,
+     2
+    ],
+    "u3": [
+     3,
+     3
+    ],
+    "lp": [
+     4,
+     4
+    ],
+    "v1": [
+     4,
+     4
+    ],
+    "ms'": [
+     5,
+     5
+    ],
+    "hp": [
+     6,
+     6
+    ],
+    "w1": [
+     5,
+     5
+    ],
+    "w2": [
+     6,
+     6
+    ],
+    "dv": [
+     7,
+     7
+    ],
+    "sq": [
+     8,
+     8
+    ],
+    "m1": [
+     7,
+     8
+    ]
+   },
+   "regs": [
+    [
+     "u1",
+     "xc",
+     "v1",
+     "w1",
+     "w2",
+     "m1"
+    ],
+    [
+     "u2",
+     "u3",
+     "sq"
+    ]
+   ]
+  },
+  "arch_bound": {
+   "lp": "lp1",
+   "ms'": "ms",
+   "hp": "hp_out",
+   "dv": "dv_out",
+   "mwi'": "mwi_out"
+  }
+ },
+ "clique_B": [
+  [
+   "xc",
+   "u1",
+   "lp",
+   "ms'",
+   "hp",
+   "dv"
+  ],
+  [
+   "u2",
+   "u3",
+   "v1",
+   "w1",
+   "w2",
+   "m1",
+   "mwi'"
+  ]
+ ],
+ "compat_edges": 72,
+ "clique_A": [
+  [
+   "xc",
+   "u1",
+   "dv",
+   "m1",
+   "mwi'",
+   "u2",
+   "u3",
+   "lp",
+   "v1",
+   "ms'",
+   "hp",
+   "w1",
+   "w2"
+  ]
+ ],
+ "schedule_min_area": {
+  "u1": 1,
+  "u2": 2,
+  "xc": 3,
+  "u3": 4,
+  "lp": 5,
+  "v1": 6,
+  "ms'": 7,
+  "w1": 8,
+  "hp": 9,
+  "w2": 10,
+  "dv": 11,
+  "sq": 12,
+  "m1": 12,
+  "mwi'": 13
+ },
+ "schedule_min_latency": {
+  "u1": 1,
+  "u2": 1,
+  "xc": 2,
+  "u3": 2,
+  "lp": 3,
+  "v1": 3,
+  "ms'": 4,
+  "w1": 4,
+  "hp": 5,
+  "w2": 5,
+  "dv": 6,
+  "m1": 6,
+  "sq": 7,
+  "mwi'": 8
+ }
+}

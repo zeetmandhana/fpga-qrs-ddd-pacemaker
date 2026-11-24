@@ -1,0 +1,59 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_hpbuf_RAM_2P_LUTRAM_1R1W.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_hpbuf_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_lpbuf_RAM_2P_LUTRAM_1R1W.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_lpbuf_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_sqbuf_RAM_2P_LUTRAM_1R1W.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_sqbuf_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_xbuf_RAM_2P_LUTRAM_1R1W.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_xbuf_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_mul_29s_29s_32_2_1.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_mul_29s_29s_32_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/paper/rtl/qrs_baselines.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_cross_refract
+INFO: [VRFC 10-311] analyzing module qrs_base_thr
+INFO: [VRFC 10-311] analyzing module qrs_base_mwi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/paper/rtl/tb_qrs_baselines.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_qrs_baselines
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_qrs_baselines -s tb_base_snap -timescale 1ns/1ps 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.qrs_cross_refract
+Compiling module work.qrs_base_thr
+Compiling module work.qrs_stream_xbuf_RAM_2P_LUTRAM_1R...
+Compiling module work.qrs_stream_lpbuf_RAM_2P_LUTRAM_1...
+Compiling module work.qrs_stream_hpbuf_RAM_2P_LUTRAM_1...
+Compiling module work.qrs_stream_sqbuf_RAM_2P_LUTRAM_1...
+Compiling module work.qrs_stream_mul_29s_29s_32_2_1(NU...
+Compiling module work.qrs_stream
+Compiling module work.qrs_base_mwi
+Compiling module work.tb_qrs_baselines
+Built simulation snapshot tb_base_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Nov 20 17:41:12 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_base_snap/xsim_script.tcl
+# xsim {tb_base_snap} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+B0: RTL 344 detections, model 344, mismatches 0
+B1: RTL 344 detections, model 344, mismatches 0
+BASELINES BIT-EXACT PASS
+$finish called at time : 64002095 ns : File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/paper/rtl/tb_qrs_baselines.v" Line 74
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Nov 20 17:41:18 2026...

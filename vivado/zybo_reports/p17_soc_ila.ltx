@@ -1,0 +1,1551 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "25000000"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "p17_soc_i/ila_0",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "C355A41556705B5E8F6FE4D40CC059F8",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/ila_tap_0_rec_stb",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 10,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/ila_tap_0_rec_ecg",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_ecg[10]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_ecg[9]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_ecg[8]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_ecg[7]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_ecg[6]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_ecg[5]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_ecg[4]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_ecg[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_ecg[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_ecg[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_ecg[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/ila_tap_0_rec_qrs",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/ila_tap_0_rec_ap",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/ila_tap_0_rec_vp",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/ila_tap_0_rec_as",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/ila_tap_0_rec_vs",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 11,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/ila_tap_0_rec_qrs_delay",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_qrs_delay[11]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_qrs_delay[10]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_qrs_delay[9]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_qrs_delay[8]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_qrs_delay[7]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_qrs_delay[6]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_qrs_delay[5]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_qrs_delay[4]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_qrs_delay[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_qrs_delay[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_qrs_delay[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_qrs_delay[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/ila_tap_0_rec_mode",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mode[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mode[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mode[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 23,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/ila_tap_0_rec_mwi",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[23]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[22]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[21]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[20]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[19]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[18]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[17]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[16]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[15]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[14]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[13]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[12]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[11]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[10]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[9]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[8]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[7]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[6]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[5]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[4]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_mwi[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe10",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 23,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/ila_tap_0_rec_thr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[23]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[22]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[21]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[20]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[19]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[18]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[17]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[16]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[15]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[14]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[13]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[12]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[11]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[10]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[9]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[8]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[7]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[6]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[5]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[4]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_thr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/ila_tap_0_rec_n",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[15]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[14]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[13]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[12]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[11]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[10]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[9]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[8]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[7]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[6]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[5]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[4]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/ila_tap_0_rec_n[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "VIO_V2",
+                        "name": "p17_soc_i/vio_0",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "2ACD287AC40D53C8BC774045C4B73205",
+                        "pins": [
+                            {
+                                "name": "probe_in0",
+                                "id": 12,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/board_io_0_led",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/board_io_0_led[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/board_io_0_led[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/board_io_0_led[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/board_io_0_led[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in1",
+                                "id": 13,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/demo_ctrl_0_mode",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/demo_ctrl_0_mode[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/demo_ctrl_0_mode[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/demo_ctrl_0_mode[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in2",
+                                "id": 14,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/jtag_debug_0_cnt_qrs",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[31]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[30]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[29]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[28]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[27]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[26]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[25]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[24]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[23]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[22]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[21]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[20]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[19]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[18]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[17]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[16]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[15]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[14]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[13]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[12]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[11]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[10]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[9]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[8]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[7]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[6]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[5]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[4]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_qrs[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in3",
+                                "id": 15,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/jtag_debug_0_cnt_ap",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[31]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[30]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[29]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[28]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[27]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[26]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[25]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[24]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[23]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[22]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[21]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[20]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[19]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[18]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[17]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[16]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[15]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[14]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[13]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[12]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[11]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[10]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[9]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[8]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[7]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[6]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[5]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[4]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_ap[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in4",
+                                "id": 16,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/jtag_debug_0_cnt_vp",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[31]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[30]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[29]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[28]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[27]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[26]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[25]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[24]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[23]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[22]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[21]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[20]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[19]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[18]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[17]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[16]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[15]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[14]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[13]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[12]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[11]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[10]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[9]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[8]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[7]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[6]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[5]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[4]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vp[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in5",
+                                "id": 17,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/jtag_debug_0_cnt_as",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[31]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[30]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[29]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[28]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[27]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[26]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[25]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[24]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[23]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[22]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[21]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[20]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[19]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[18]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[17]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[16]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[15]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[14]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[13]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[12]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[11]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[10]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[9]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[8]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[7]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[6]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[5]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[4]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_as[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in6",
+                                "id": 18,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/jtag_debug_0_cnt_vs",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[31]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[30]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[29]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[28]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[27]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[26]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[25]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[24]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[23]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[22]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[21]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[20]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[19]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[18]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[17]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[16]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[15]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[14]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[13]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[12]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[11]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[10]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[9]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[8]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[7]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[6]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[5]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[4]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_vs[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in7",
+                                "id": 19,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/jtag_debug_0_cnt_irq",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[15]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[14]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[13]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[12]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[11]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[10]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[9]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[8]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[7]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[6]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[5]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[4]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_cnt_irq[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in8",
+                                "id": 20,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/jtag_debug_0_uptime_ms",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[31]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[30]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[29]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[28]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[27]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[26]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[25]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[24]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[23]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[22]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[21]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[20]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[19]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[18]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[17]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[16]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[15]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[14]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[13]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[12]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[11]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[10]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[9]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[8]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[7]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[6]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[5]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[4]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/jtag_debug_0_uptime_ms[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in9",
+                                "id": 21,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/event_router_0_last_rr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[31]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[30]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[29]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[28]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[27]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[26]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[25]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[24]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[23]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[22]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[21]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[20]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[19]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[18]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[17]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[16]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[15]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[14]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[13]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[12]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[11]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[10]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[9]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[8]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[7]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[6]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[5]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[4]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/event_router_0_last_rr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_in10",
+                                "id": 22,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/neorv32_top_0_gpio_o",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/neorv32_top_0_gpio_o[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/neorv32_top_0_gpio_o[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/neorv32_top_0_gpio_o[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out0",
+                                "id": 23,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/vio_0_probe_out0",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/vio_0_probe_out0[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/vio_0_probe_out0[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/vio_0_probe_out0[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/vio_0_probe_out0[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out1",
+                                "id": 24,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/vio_0_probe_out1",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/vio_0_probe_out1[3]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/vio_0_probe_out1[2]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/vio_0_probe_out1[1]"
+                                            },
+                                            {
+                                                "name": "p17_soc_i/vio_0_probe_out1[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out2",
+                                "id": 25,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "p17_soc_i/vio_0_probe_out2",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "p17_soc_i/vio_0_probe_out2[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

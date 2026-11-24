@@ -1,0 +1,295 @@
+{
+ "machine": {
+  "states": 6,
+  "inputs": 7,
+  "outputs": 4,
+  "kiss_rows_complete": 240,
+  "kiss_rows_dc": 178,
+  "dont_care_entries": 288,
+  "total_entries": 768
+ },
+ "implication_chart": {
+  "VRF-PVA": {
+   "status": "OK",
+   "why": "",
+   "implied": [],
+   "n_common_inputs": 64
+  },
+  "VRF-VRO": {
+   "status": "OK",
+   "why": "",
+   "implied": [],
+   "n_common_inputs": 64
+  },
+  "VRF-ALR": {
+   "status": "OK",
+   "why": "",
+   "implied": [],
+   "n_common_inputs": 32
+  },
+  "VRF-AVD": {
+   "status": "X1",
+   "why": "outputs differ, e.g. input 0000011",
+   "implied": []
+  },
+  "VRF-URW": {
+   "status": "X1",
+   "why": "outputs differ, e.g. input 0000011",
+   "implied": []
+  },
+  "PVA-VRO": {
+   "status": "OK",
+   "why": "",
+   "implied": [],
+   "n_common_inputs": 32
+  },
+  "PVA-ALR": {
+   "status": "OK",
+   "why": "",
+   "implied": [],
+   "n_common_inputs": 32
+  },
+  "PVA-AVD": {
+   "status": "X1",
+   "why": "outputs differ, e.g. input 0010011",
+   "implied": []
+  },
+  "PVA-URW": {
+   "status": "X1",
+   "why": "outputs differ, e.g. input 0010011",
+   "implied": []
+  },
+  "VRO-ALR": {
+   "status": "OK",
+   "why": "",
+   "implied": [],
+   "n_common_inputs": 32
+  },
+  "VRO-AVD": {
+   "status": "X1",
+   "why": "outputs differ, e.g. input 0000011",
+   "implied": []
+  },
+  "VRO-URW": {
+   "status": "X1",
+   "why": "outputs differ, e.g. input 0000011",
+   "implied": []
+  },
+  "ALR-AVD": {
+   "status": "X1",
+   "why": "outputs differ, e.g. input 0010011",
+   "implied": []
+  },
+  "ALR-URW": {
+   "status": "X1",
+   "why": "outputs differ, e.g. input 0010011",
+   "implied": []
+  },
+  "AVD-URW": {
+   "status": "OK",
+   "why": "",
+   "implied": [],
+   "n_common_inputs": 64
+  }
+ },
+ "maximal_compatibles": [
+  [
+   "VRF",
+   "PVA",
+   "VRO",
+   "ALR"
+  ],
+  [
+   "AVD",
+   "URW"
+  ]
+ ],
+ "cover_of_maximal_compatibles": {
+  "covers_all": true,
+  "closed": true,
+  "states_after": 2
+ },
+ "partition_complete": {
+  "passes": [
+   [
+    [
+     "VRF",
+     "PVA",
+     "VRO",
+     "ALR"
+    ],
+    [
+     "AVD",
+     "URW"
+    ]
+   ],
+   [
+    [
+     "VRF",
+     "PVA",
+     "VRO",
+     "ALR"
+    ],
+    [
+     "AVD",
+     "URW"
+    ]
+   ]
+  ],
+  "classes": [
+   [
+    "VRF",
+    "PVA",
+    "VRO",
+    "ALR"
+   ],
+   [
+    "AVD",
+    "URW"
+   ]
+  ]
+ },
+ "kit_partition_classes": [
+  [
+   "VRF",
+   "PVA",
+   "VRO",
+   "ALR"
+  ],
+  [
+   "AVD",
+   "URW"
+  ]
+ ],
+ "minimised": {
+  "states": 2,
+  "kiss_rows": 97
+ },
+ "product_spec_vs_rtl": {
+  "equal": true,
+  "reachable_pairs": [
+   [
+    "ALR",
+    0
+   ],
+   [
+    "AVD",
+    1
+   ],
+   [
+    "PVA",
+    0
+   ],
+   [
+    "URW",
+    1
+   ],
+   [
+    "VRF",
+    0
+   ],
+   [
+    "VRO",
+    0
+   ]
+  ],
+  "checked": 480
+ },
+ "product_min_vs_rtl": {
+  "equal": true,
+  "reachable_pairs": [
+   [
+    "AEI",
+    0
+   ],
+   [
+    "AVI",
+    1
+   ]
+  ],
+  "checked": 256
+ },
+ "min_is_rtl_phase": true,
+ "concrete": [
+  {
+   "params(LRI,AVI,URI,PVARP,VRP)": [
+    1000,
+    180,
+    500,
+    320,
+    250
+   ],
+   "AEI": 820,
+   "reachable_states": 91181,
+   "transitions_checked": 364724,
+   "dont_care_violations": 0,
+   "output_mismatches": 0,
+   "first_problem": null
+  },
+  {
+   "params(LRI,AVI,URI,PVARP,VRP)": [
+    400,
+    350,
+    350,
+    500,
+    400
+   ],
+   "AEI": 50,
+   "reachable_states": 751,
+   "transitions_checked": 3004,
+   "dont_care_violations": 0,
+   "output_mismatches": 0,
+   "first_problem": null
+  },
+  {
+   "params(LRI,AVI,URI,PVARP,VRP)": [
+    2000,
+    30,
+    300,
+    150,
+    400
+   ],
+   "AEI": 1970,
+   "reachable_states": 63891,
+   "transitions_checked": 255564,
+   "dont_care_violations": 0,
+   "output_mismatches": 0,
+   "first_problem": null
+  },
+  {
+   "params(LRI,AVI,URI,PVARP,VRP)": [
+    400,
+    30,
+    400,
+    150,
+    150
+   ],
+   "AEI": 370,
+   "reachable_states": 31341,
+   "transitions_checked": 125364,
+   "dont_care_violations": 0,
+   "output_mismatches": 0,
+   "first_problem": null
+  },
+  {
+   "params(LRI,AVI,URI,PVARP,VRP)": [
+    857,
+    120,
+    450,
+    250,
+    300
+   ],
+   "AEI": 737,
+   "reachable_states": 62658,
+   "transitions_checked": 250632,
+   "dont_care_violations": 0,
+   "output_mismatches": 0,
+   "first_problem": null
+  }
+ ],
+ "rtl_mirror_vs_pacemaker_py_mismatches(defaults,300k ticks)": 0,
+ "qrs_decision_partition": {
+  "states": 8,
+  "classes": 8
+ }
+}

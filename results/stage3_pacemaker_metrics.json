@@ -1,0 +1,179 @@
+{
+  "parameters": {
+    "lri_ms": 1000,
+    "avi_ms": 180,
+    "uri_ms": 500,
+    "pvarp_ms": 320,
+    "vrp_ms": 250
+  },
+  "scenarios": {
+    "normal": {
+      "checks": [
+        {
+          "name": "never AP and VP on the same tick (no cross-chamber short)",
+          "passed": true,
+          "detail": "0 violations"
+        },
+        {
+          "name": "upper rate respected: no VP faster than URI (500 ms)",
+          "passed": true,
+          "detail": "0 violations"
+        },
+        {
+          "name": "ventricle always beats within LRI+tol (1000+20 ms)",
+          "passed": true,
+          "detail": "max V-V gap 800 ms"
+        }
+      ],
+      "all_passed": true,
+      "vent_rate_bpm": 75.0,
+      "atr_rate_bpm": 75.0,
+      "n_AP": 1,
+      "n_VP": 0,
+      "n_AS": 14,
+      "n_VS": 15,
+      "min_vv_ms": 800,
+      "max_vv_ms": 800
+    },
+    "brady": {
+      "checks": [
+        {
+          "name": "never AP and VP on the same tick (no cross-chamber short)",
+          "passed": true,
+          "detail": "0 violations"
+        },
+        {
+          "name": "upper rate respected: no VP faster than URI (500 ms)",
+          "passed": true,
+          "detail": "0 violations"
+        },
+        {
+          "name": "ventricle always beats within LRI+tol (1000+20 ms)",
+          "passed": true,
+          "detail": "max V-V gap 970 ms"
+        }
+      ],
+      "all_passed": true,
+      "vent_rate_bpm": 61.9,
+      "atr_rate_bpm": 61.9,
+      "n_AP": 13,
+      "n_VP": 0,
+      "n_AS": 0,
+      "n_VS": 13,
+      "min_vv_ms": 970,
+      "max_vv_ms": 970
+    },
+    "block": {
+      "checks": [
+        {
+          "name": "never AP and VP on the same tick (no cross-chamber short)",
+          "passed": true,
+          "detail": "0 violations"
+        },
+        {
+          "name": "upper rate respected: no VP faster than URI (500 ms)",
+          "passed": true,
+          "detail": "0 violations"
+        },
+        {
+          "name": "ventricle always beats within LRI+tol (1000+20 ms)",
+          "passed": true,
+          "detail": "max V-V gap 800 ms"
+        }
+      ],
+      "all_passed": true,
+      "vent_rate_bpm": 75.0,
+      "atr_rate_bpm": 75.0,
+      "n_AP": 1,
+      "n_VP": 15,
+      "n_AS": 14,
+      "n_VS": 0,
+      "min_vv_ms": 800,
+      "max_vv_ms": 800
+    },
+    "dual": {
+      "checks": [
+        {
+          "name": "never AP and VP on the same tick (no cross-chamber short)",
+          "passed": true,
+          "detail": "0 violations"
+        },
+        {
+          "name": "upper rate respected: no VP faster than URI (500 ms)",
+          "passed": true,
+          "detail": "0 violations"
+        },
+        {
+          "name": "ventricle always beats within LRI+tol (1000+20 ms)",
+          "passed": true,
+          "detail": "max V-V gap 1000 ms"
+        }
+      ],
+      "all_passed": true,
+      "vent_rate_bpm": 60.0,
+      "atr_rate_bpm": 60.0,
+      "n_AP": 12,
+      "n_VP": 12,
+      "n_AS": 0,
+      "n_VS": 0,
+      "min_vv_ms": 1000,
+      "max_vv_ms": 1000
+    },
+    "pmt_safe": {
+      "checks": [
+        {
+          "name": "never AP and VP on the same tick (no cross-chamber short)",
+          "passed": true,
+          "detail": "0 violations"
+        },
+        {
+          "name": "upper rate respected: no VP faster than URI (500 ms)",
+          "passed": true,
+          "detail": "0 violations"
+        },
+        {
+          "name": "ventricle always beats within LRI+tol (1000+20 ms)",
+          "passed": true,
+          "detail": "max V-V gap 1000 ms"
+        }
+      ],
+      "all_passed": true,
+      "vent_rate_bpm": 60.0,
+      "atr_rate_bpm": 120.4,
+      "n_AP": 12,
+      "n_VP": 12,
+      "n_AS": 0,
+      "n_VS": 0,
+      "min_vv_ms": 1000,
+      "max_vv_ms": 1000
+    },
+    "pmt_bug": {
+      "checks": [
+        {
+          "name": "never AP and VP on the same tick (no cross-chamber short)",
+          "passed": true,
+          "detail": "0 violations"
+        },
+        {
+          "name": "upper rate respected: no VP faster than URI (500 ms)",
+          "passed": true,
+          "detail": "0 violations"
+        },
+        {
+          "name": "ventricle always beats within LRI+tol (1000+20 ms)",
+          "passed": true,
+          "detail": "max V-V gap 500 ms"
+        }
+      ],
+      "all_passed": true,
+      "vent_rate_bpm": 120.0,
+      "atr_rate_bpm": 120.4,
+      "n_AP": 1,
+      "n_VP": 24,
+      "n_AS": 24,
+      "n_VS": 0,
+      "min_vv_ms": 500,
+      "max_vv_ms": 500
+    }
+  }
+}

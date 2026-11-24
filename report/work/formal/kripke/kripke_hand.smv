@@ -1,0 +1,60 @@
+MODULE main
+VAR s : 0..15;
+ASSIGN
+  next(s) := case
+    s = 0 : 1;
+    s = 1 : 2;
+    s = 2 : 3;
+    s = 3 : 4;
+    s = 4 : 5;
+    s = 5 : {6, 7};
+    s = 6 : 8;
+    s = 7 : 9;
+    s = 8 : 10;
+    s = 9 : 11;
+    s = 10 : 12;
+    s = 11 : 4;
+    s = 12 : 13;
+    s = 13 : 14;
+    s = 14 : 15;
+    s = 15 : 3;
+  esac;
+DEFINE
+  AS := s in {7};
+  VP := s in {3, 11};
+  upper := s in {11};
+  slow_vbeat := s in {3};
+-- no init(s): every state is initial, so 's = k -> phi' checks phi at state k
+CTLSPEC NAME phi1_s0 := (s = 0 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s1 := (s = 1 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s2 := (s = 2 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s3 := (s = 3 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s4 := (s = 4 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s5 := (s = 5 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s6 := (s = 6 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s7 := (s = 7 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s8 := (s = 8 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s9 := (s = 9 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s10 := (s = 10 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s11 := (s = 11 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s12 := (s = 12 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s13 := (s = 13 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s14 := (s = 14 -> E[ !upper U AS ]);
+CTLSPEC NAME phi1_s15 := (s = 15 -> E[ !upper U AS ]);
+CTLSPEC NAME phi2_s0 := (s = 0 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s1 := (s = 1 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s2 := (s = 2 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s3 := (s = 3 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s4 := (s = 4 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s5 := (s = 5 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s6 := (s = 6 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s7 := (s = 7 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s8 := (s = 8 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s9 := (s = 9 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s10 := (s = 10 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s11 := (s = 11 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s12 := (s = 12 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s13 := (s = 13 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s14 := (s = 14 -> EG !slow_vbeat);
+CTLSPEC NAME phi2_s15 := (s = 15 -> EG !slow_vbeat);
+CTLSPEC NAME phi1_init := (s = 0 -> E[ !upper U AS ]);

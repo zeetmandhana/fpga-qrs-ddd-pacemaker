@@ -1,0 +1,21 @@
+Shared ROBDD of the event-priority block (4 outputs, 8 inputs)
+
+ordering                                   classical  dd(complement edges)
+natural p,a,v,r,m,u,e,b                           23     21
+reversed b,e,u,m,r,v,a,p                          22     20
+timers first e,b,u,m,r,p,a,v                      26     22
+exhaustive best a,m,u,b,e,p,v,r                   15     12
+exhaustive worst v,a,p,m,u,e,r,b                  32     29
+
+sifting from natural : dd 21 -> 15 nodes, order p,a,b,e,r,v,u,m (classical 18)
+sifting from worst   : dd 29 -> 17 nodes, order u,v,r,a,b,m,e,p (classical 19)
+exhaustive over 40,320 orders (45.8 s): best 15 (240 orders reach it), worst 32
+
+Equivalence (same canonical node as the truth-table BDD for all 4 outputs):
+  truth table (src/event_priority.py)        EQUAL  nodes {'VS': 9, 'VP': -629, 'AS': -902, 'AP': -1160}
+  espresso SOP (9 products, kit)             EQUAL  nodes {'VS': 9, 'VP': -629, 'AS': -902, 'AP': -1160}
+  factored form (kit STEP 1)                 EQUAL  nodes {'VS': 9, 'VP': -629, 'AS': -902, 'AP': -1160}
+  SIS gkx kernels t4=v'+r', t5=b+a'          EQUAL  nodes {'VS': 9, 'VP': -629, 'AS': -902, 'AP': -1160}
+  SIS script.rugged (14 literals)            EQUAL  nodes {'VS': 9, 'VP': -629, 'AS': -902, 'AP': -1160}
+  RTL rtl/event_priority.v (parsed)          EQUAL  nodes {'VS': 9, 'VP': -629, 'AS': -902, 'AP': -1160}
+  Yosys + ABC netlist (BLIF)                 EQUAL  nodes {'VS': 9, 'VP': -629, 'AS': -902, 'AP': -1160}

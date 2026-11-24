@@ -1,0 +1,175 @@
+%Warning-BLKSEQ: ddd_pacemaker.v:60:21: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   60 |                 tv  = (t_v >= lri) ? (lri + 1'b1) : (t_v + 1'b1);
+      |                     ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+                 ... For warning description see https://verilator.org/warn/BLKSEQ?v=5.055
+                 ... Use "/* verilator lint_off BLKSEQ */" and lint_on around source to disable this message.
+%Warning-BLKSEQ: ddd_pacemaker.v:61:21: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   61 |                 tav = (phase == PH_AVI) ? (t_av + 1'b1) : {W{1'b0}};
+      |                     ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:63:22: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   63 |                 vs_c = 0; vp_c = 0; as_c = 0; ap_c = 0; arr_c = 0;
+      |                      ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:63:32: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   63 |                 vs_c = 0; vp_c = 0; as_c = 0; ap_c = 0; arr_c = 0;
+      |                                ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:63:42: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   63 |                 vs_c = 0; vp_c = 0; as_c = 0; ap_c = 0; arr_c = 0;
+      |                                          ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:63:52: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   63 |                 vs_c = 0; vp_c = 0; as_c = 0; ap_c = 0; arr_c = 0;
+      |                                                    ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:63:63: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   63 |                 vs_c = 0; vp_c = 0; as_c = 0; ap_c = 0; arr_c = 0;
+      |                                                               ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:64:21: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   64 |                 ntv = tv; ntav = tav; nphase = phase;
+      |                     ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:64:32: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   64 |                 ntv = tv; ntav = tav; nphase = phase;
+      |                                ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:64:46: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   64 |                 ntv = tv; ntav = tav; nphase = phase;
+      |                                              ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:67:53: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   67 |                 if (v_sense_in && (tv >= vrp)) vs_c = 1;
+      |                                                     ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:70:28: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   70 |                     nphase = PH_AEI; ntv = 0; ntav = 0;
+      |                            ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:70:42: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   70 |                     nphase = PH_AEI; ntv = 0; ntav = 0;
+      |                                          ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:70:52: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   70 |                     nphase = PH_AEI; ntv = 0; ntav = 0;
+      |                                                    ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:71:42: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   71 |                     if (tv <= uri) arr_c = 1;             
+      |                                          ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:75:30: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   75 |                         vp_c = 1; nphase = PH_AEI; ntv = 0; ntav = 0;
+      |                              ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:75:42: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   75 |                         vp_c = 1; nphase = PH_AEI; ntv = 0; ntav = 0;
+      |                                          ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:75:56: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   75 |                         vp_c = 1; nphase = PH_AEI; ntv = 0; ntav = 0;
+      |                                                        ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:75:66: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   75 |                         vp_c = 1; nphase = PH_AEI; ntv = 0; ntav = 0;
+      |                                                                  ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:76:46: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   76 |                         if (tv <= uri) arr_c = 1;         
+      |                                              ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:80:33: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   80 |                         blanked = (tv < pvarp);
+      |                                 ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:82:34: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   82 |                             as_c = 1; nphase = PH_AVI; ntav = 0;
+      |                                  ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:82:46: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   82 |                             as_c = 1; nphase = PH_AVI; ntav = 0;
+      |                                              ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:82:61: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   82 |                             as_c = 1; nphase = PH_AVI; ntav = 0;
+      |                                                             ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:84:34: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   84 |                             ap_c = 1; nphase = PH_AVI; ntav = 0;
+      |                                  ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:84:46: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   84 |                             ap_c = 1; nphase = PH_AVI; ntav = 0;
+      |                                              ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-BLKSEQ: ddd_pacemaker.v:84:61: Blocking assignment '=' in sequential logic process
+                                      : ... note: In instance 'ddd_pacemaker_apb.u_ctrl'
+                                      : ... Suggest using delayed assignment '<='
+   84 |                             ap_c = 1; nphase = PH_AVI; ntav = 0;
+      |                                                             ^
+                 ddd_pacemaker_apb.v:97:1: ... note: In file included from 'ddd_pacemaker_apb.v'
+%Warning-UNUSEDSIGNAL: ddd_pacemaker_apb.v:24:24: Bits of signal are not used: 'PADDR'[1:0]
+                                                : ... note: In instance 'ddd_pacemaker_apb'
+   24 |     input  wire [7:0]  PADDR,
+      |                        ^~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.055
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: ddd_pacemaker_apb.v:25:24: Bits of signal are not used: 'PWDATA'[31:16]
+                                                : ... note: In instance 'ddd_pacemaker_apb'
+   25 |     input  wire [31:0] PWDATA,
+      |                        ^~~~~~
+%Error: Exiting due to 29 warning(s)

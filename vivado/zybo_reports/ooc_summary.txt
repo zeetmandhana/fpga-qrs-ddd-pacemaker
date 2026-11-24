@@ -1,0 +1,6 @@
+block                   LUT     FF   DSP  BRAM WNS@100MHz
+ddd_pacemaker_apb       231    120     0     0      1.57
+event_priority            4      0     0     0      7.93
+qrs_decision           3633   1723     0     0     0.189
+heart_model             119    167     0     0     5.207
+xbus_apb_bridge          47     90     0     0     6.963

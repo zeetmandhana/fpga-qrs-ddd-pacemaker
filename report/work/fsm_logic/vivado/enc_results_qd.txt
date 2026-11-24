@@ -1,0 +1,8 @@
+variant|fsm_extraction|LUT|FF|WNS_ns|period_ns|Fmax_MHz
+as_written|off|3626|1723|0.112|10.0|101.1
+auto|auto|3631|1723|-0.457|10.0|95.6
+sequential|sequential|3631|1723|-0.457|10.0|95.6
+gray|gray|3629|1723|-0.130|10.0|98.7
+johnson|johnson|3641|1726|0.158|10.0|101.6
+one_hot|one_hot|3619|1728|0.130|10.0|101.3
+custom_min|off|3631|1725|0.015|10.0|100.2

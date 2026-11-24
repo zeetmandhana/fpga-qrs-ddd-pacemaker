@@ -1,0 +1,19 @@
+
+4. Printing statistics.
+
+=== event_priority ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       18 wires
+       18 wire bits
+       13 public wires
+       13 public wire bits
+       12 ports
+       12 port bits
+        9 cells
+        2   $_ANDNOT_
+        5   $_AND_
+        1   $_NOR_
+        1   $_ORNOT_
+

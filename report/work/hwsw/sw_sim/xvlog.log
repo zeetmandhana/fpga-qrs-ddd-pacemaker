@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/xbus_apb_bridge.v" into library work
+INFO: [VRFC 10-311] analyzing module xbus_apb_bridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/demo_ctrl_apb.v" into library work
+INFO: [VRFC 10-311] analyzing module demo_ctrl_apb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/hwsw/tb_sw_bench.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_sw_bench

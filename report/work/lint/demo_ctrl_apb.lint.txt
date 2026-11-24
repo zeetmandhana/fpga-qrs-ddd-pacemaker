@@ -1,0 +1,11 @@
+%Warning-UNUSEDSIGNAL: demo_ctrl_apb.v:24:24: Bits of signal are not used: 'PADDR'[1:0]
+                                            : ... note: In instance 'demo_ctrl_apb'
+   24 |     input  wire [7:0]  PADDR,
+      |                        ^~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.055
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: demo_ctrl_apb.v:25:24: Bits of signal are not used: 'PWDATA'[31:3]
+                                            : ... note: In instance 'demo_ctrl_apb'
+   25 |     input  wire [31:0] PWDATA,
+      |                        ^~~~~~
+%Error: Exiting due to 2 warning(s)

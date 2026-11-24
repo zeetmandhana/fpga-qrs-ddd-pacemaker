@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\Vivadoproject\\P17_QRS_Pacemaker\\hls\\qrs_stream",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=qrs_stream",
+      "-c",
+      "C:\\Vivadoproject\\P17_QRS_Pacemaker\\hls\\qrs_stream.cpp"
+    ],
+    "file": "C:\\Vivadoproject\\P17_QRS_Pacemaker\\hls\\qrs_stream.cpp"
+  },
+  {
+    "directory": "C:\\Vivadoproject\\P17_QRS_Pacemaker\\hls\\qrs_stream",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-c",
+      "C:\\Vivadoproject\\P17_QRS_Pacemaker\\hls\\qrs_stream_tb.cpp"
+    ],
+    "file": "C:\\Vivadoproject\\P17_QRS_Pacemaker\\hls\\qrs_stream_tb.cpp"
+  }
+]

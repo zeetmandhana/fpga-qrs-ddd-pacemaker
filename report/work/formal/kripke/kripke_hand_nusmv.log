@@ -1,0 +1,49 @@
+*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2025, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+-- specification (s = 0 -> E [ !upper U AS ] )  is true
+-- specification (s = 1 -> E [ !upper U AS ] )  is true
+-- specification (s = 2 -> E [ !upper U AS ] )  is true
+-- specification (s = 3 -> E [ !upper U AS ] )  is true
+-- specification (s = 4 -> E [ !upper U AS ] )  is true
+-- specification (s = 5 -> E [ !upper U AS ] )  is true
+-- specification (s = 6 -> E [ !upper U AS ] )  is true
+-- specification (s = 7 -> E [ !upper U AS ] )  is true
+-- specification (s = 8 -> E [ !upper U AS ] )  is true
+-- specification (s = 9 -> E [ !upper U AS ] )  is false
+-- specification (s = 10 -> E [ !upper U AS ] )  is true
+-- specification (s = 11 -> E [ !upper U AS ] )  is false
+-- specification (s = 12 -> E [ !upper U AS ] )  is true
+-- specification (s = 13 -> E [ !upper U AS ] )  is true
+-- specification (s = 14 -> E [ !upper U AS ] )  is true
+-- specification (s = 15 -> E [ !upper U AS ] )  is true
+-- specification (s = 0 -> EG !slow_vbeat)  is false
+-- specification (s = 1 -> EG !slow_vbeat)  is false
+-- specification (s = 2 -> EG !slow_vbeat)  is false
+-- specification (s = 3 -> EG !slow_vbeat)  is false
+-- specification (s = 4 -> EG !slow_vbeat)  is true
+-- specification (s = 5 -> EG !slow_vbeat)  is true
+-- specification (s = 6 -> EG !slow_vbeat)  is false
+-- specification (s = 7 -> EG !slow_vbeat)  is true
+-- specification (s = 8 -> EG !slow_vbeat)  is false
+-- specification (s = 9 -> EG !slow_vbeat)  is true
+-- specification (s = 10 -> EG !slow_vbeat)  is false
+-- specification (s = 11 -> EG !slow_vbeat)  is true
+-- specification (s = 12 -> EG !slow_vbeat)  is false
+-- specification (s = 13 -> EG !slow_vbeat)  is false
+-- specification (s = 14 -> EG !slow_vbeat)  is false
+-- specification (s = 15 -> EG !slow_vbeat)  is false
+-- specification (s = 0 -> E [ !upper U AS ] )  is true

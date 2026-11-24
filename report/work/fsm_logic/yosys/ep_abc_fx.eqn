@@ -1,0 +1,11 @@
+# Equations for "event_priority" written by ABC on Fri Nov 20 17:44:54 2026
+INORDER = p a v r m u e b;
+OUTORDER = vs vp as_o ap;
+vs = n17;
+vp = !n17 * u * p * m;
+as_o = n18 * n19;
+ap = n19 * e * !n18;
+n17 = v * r;
+n18 = a * !b;
+n19 = !p * !n17;
+

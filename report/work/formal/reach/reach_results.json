@@ -1,0 +1,57 @@
+[
+ {
+  "model": "ddd_oa",
+  "reachable": 168,
+  "iterations": 10,
+  "T_nodes": 258,
+  "R_nodes": 21,
+  "state_bits": 12,
+  "nusmv_reachable": 168,
+  "nusmv_diameter": 11,
+  "match": true
+ },
+ {
+  "model": "ddd_pmt",
+  "reachable": 26,
+  "iterations": 12,
+  "T_nodes": 204,
+  "R_nodes": 29,
+  "state_bits": 11,
+  "nusmv_reachable": 26,
+  "nusmv_diameter": 13,
+  "match": true
+ },
+ {
+  "model": "ddd_pmt_bug1",
+  "reachable": 16,
+  "iterations": 7,
+  "T_nodes": 225,
+  "R_nodes": 26,
+  "state_bits": 11,
+  "nusmv_reachable": 16,
+  "nusmv_diameter": 8,
+  "match": true
+ },
+ {
+  "model": "ddd_oa_bug1",
+  "reachable": 240,
+  "iterations": 10,
+  "T_nodes": 286,
+  "R_nodes": 23,
+  "state_bits": 12,
+  "nusmv_reachable": 240,
+  "nusmv_diameter": 11,
+  "match": true
+ },
+ {
+  "model": "ddd_oa_bug2",
+  "reachable": 168,
+  "iterations": 10,
+  "T_nodes": 229,
+  "R_nodes": 21,
+  "state_bits": 12,
+  "nusmv_reachable": 168,
+  "nusmv_diameter": 11,
+  "match": true
+ }
+]

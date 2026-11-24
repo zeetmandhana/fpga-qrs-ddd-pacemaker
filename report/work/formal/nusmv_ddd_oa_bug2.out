@@ -1,0 +1,27 @@
+*** This is NuSMV 2.7.1 (compiled on Mon Sep 29 16:07:59 2025)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2025, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+-- specification AG t_av <= 4  is true
+-- specification AG !(AP & VP)  is true
+-- specification AG (VP -> tv >= URI)  is true
+-- specification AG (AS -> tv >= PVARP)  is true
+-- specification AG (VS -> tv >= VRP)  is false
+-- specification AG (VP -> tav >= AVI_T)  is true
+-- specification AG (AP -> tv >= AEI)  is true
+-- specification (((EF AP & EF VP) & EF AS) & EF VS)  is true
+-- specification AG (EF phase = PH_AEI)  is true
+-- specification AG (AF Vbeat)  is true
+-- specification AG ((AS | AP) -> AX A [ !(AS | AP) U Vbeat ] )  is true

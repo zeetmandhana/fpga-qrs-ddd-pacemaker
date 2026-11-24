@@ -1,0 +1,3 @@
+qrs_base_thr LUT=   16  (mem     0 ) FF=   73  DSP=    0  BRAM=    0  WNS=6.092
+qrs_base_mwi LUT=  510  (mem   162 ) FF=  619  DSP=    3  BRAM=    0  WNS=2.658
+qrs_detector LUT= 2850  (mem   162 ) FF= 2385  DSP=    3  BRAM=    0  WNS=-0.421

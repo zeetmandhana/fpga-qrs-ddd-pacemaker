@@ -1,0 +1,45 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed Nov 11 12:27:24 2026
+| Host         : Zeet running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 2 -file C:/Vivadoproject/P17_QRS_Pacemaker/vivado/zybo_reports/impl_util_hier.rpt
+| Design       : p17_zybo_top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------+-------------------+------------+------------+---------+------+------+--------+--------+------------+
+|     Instance     |       Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++------------------+-------------------+------------+------------+---------+------+------+--------+--------+------------+
+| p17_zybo_top     |             (top) |       6048 |       5640 |     406 |    2 | 4780 |     17 |      7 |          3 |
+|   (p17_zybo_top) |             (top) |         40 |         40 |       0 |    0 |  224 |      0 |      2 |          0 |
+|   u_br           |   xbus_apb_bridge |         77 |         77 |       0 |    0 |   70 |      0 |      0 |          0 |
+|   u_cpu          |       neorv32_p17 |       1483 |       1459 |      24 |    0 | 1204 |      5 |      4 |          0 |
+|     u_cpu        |       neorv32_top |       1483 |       1459 |      24 |    0 | 1204 |      5 |      4 |          0 |
+|   u_ctl          |     demo_ctrl_apb |        114 |        114 |       0 |    0 |  164 |      0 |      0 |          0 |
+|   u_det          |      qrs_detector |       3190 |       3028 |     162 |    0 | 2384 |      0 |      0 |          3 |
+|     (u_det)      |      qrs_detector |          1 |          1 |       0 |    0 |  117 |      0 |      0 |          0 |
+|     u_dec        |      qrs_decision |       2730 |       2730 |       0 |    0 | 1704 |      0 |      0 |          0 |
+|     u_hls        |        qrs_stream |        459 |        297 |     162 |    0 |  563 |      0 |      0 |          3 |
+|   u_disp         |       ecg_display |        736 |        514 |     220 |    2 |  352 |      2 |      1 |          0 |
+|     (u_disp)     |       ecg_display |        695 |        473 |     220 |    2 |  332 |      2 |      1 |          0 |
+|   u_ecg          |        ecg_source |        131 |        131 |       0 |    0 |   51 |     10 |      0 |          0 |
+|   u_heart        |       heart_model |         57 |         57 |       0 |    0 |  167 |      0 |      0 |          0 |
+|   u_pm           | ddd_pacemaker_apb |        236 |        236 |       0 |    0 |  120 |      0 |      0 |          0 |
+|     (u_pm)       | ddd_pacemaker_apb |         17 |         17 |       0 |    0 |   82 |      0 |      0 |          0 |
+|     u_ctrl       |     ddd_pacemaker |        219 |        219 |       0 |    0 |   38 |      0 |      0 |          0 |
++------------------+-------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

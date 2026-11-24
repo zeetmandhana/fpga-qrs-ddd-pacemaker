@@ -1,0 +1,18 @@
+
+ Options Set are : 
+
+   Command Line               : xcrg -cc_db rand_cov -cc_dir ./cov/xsim.codecov -report_format text -report_dir ./cov_rpt
+   Report Format              : text
+   Log File                   : xcrg.log
+   Code Coverage Dir[s]       : ./cov/xsim.codecov
+   Code Coverage DB[s]        : rand_cov
+
+
+********************************************************
+                  Code Coverage Report 
+********************************************************
+
+ Restoring Code Coverage DB[s] from : 
+
+ ERROR : Restoring of Code Coverage DBs failed. Please recheck directory/database names and run again.
+

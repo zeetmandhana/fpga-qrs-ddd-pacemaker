@@ -1,0 +1,111 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/ddd_pacemaker.v" into library work
+INFO: [VRFC 10-311] analyzing module ddd_pacemaker
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/ddd_pacemaker_apb.v" into library work
+INFO: [VRFC 10-311] analyzing module ddd_pacemaker_apb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/tb_ddd_pacemaker.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_ddd_pacemaker
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" into library work
+INFO: [VRFC 10-311] analyzing module ddd_sva
+INFO: [VRFC 10-311] analyzing module ddd_apb_sva
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_ddd_pacemaker -s dir_sva_snap -timescale 1ns/1ps 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+WARNING: [XSIM 43-4127] File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" Line 44 : The "System Verilog Cover" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" Line 45 : The "System Verilog Cover" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" Line 46 : The "System Verilog Cover" is not supported yet for simulation. The statement will be ignored.
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.cb
+Compiling module work.ddd_sva
+Compiling module work.ddd_pacemaker_default
+Compiling module work.cb
+Compiling module work.ddd_apb_sva
+Compiling module work.ddd_pacemaker_apb_default
+Compiling module work.tb_ddd_pacemaker
+Built simulation snapshot dir_sva_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Nov 22 17:54:01 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/dir_sva_snap/xsim_script.tcl
+# xsim {dir_sva_snap} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+DDD params: LRI=1000 AVI=180 URI=500 PVARP=320 VRP=250
+  C:/Vivadoproject/P17_QRS_Pacemaker/rtl/tb_data/ddd_normal.txt : 6000 ticks, 0 mismatches
+  C:/Vivadoproject/P17_QRS_Pacemaker/rtl/tb_data/ddd_block.txt : 6000 ticks, 0 mismatches
+  C:/Vivadoproject/P17_QRS_Pacemaker/rtl/tb_data/ddd_dual.txt : 6000 ticks, 0 mismatches
+
+TOTAL mismatches: 0
+RTL BIT-EXACT PASS vs Python golden model
+$finish called at time : 360690 ns : File "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/tb_ddd_pacemaker.v" Line 113
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Nov 22 17:54:03 2026...
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/ddd_pacemaker.v" into library work
+INFO: [VRFC 10-311] analyzing module ddd_pacemaker
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/ddd_pacemaker_apb.v" into library work
+INFO: [VRFC 10-311] analyzing module ddd_pacemaker_apb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/heart_model.v" into library work
+INFO: [VRFC 10-311] analyzing module heart_model
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/tb_closed_loop.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_closed_loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" into library work
+INFO: [VRFC 10-311] analyzing module ddd_sva
+INFO: [VRFC 10-311] analyzing module ddd_apb_sva
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_closed_loop -s cl_sva_snap -timescale 1ns/1ps 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+WARNING: [XSIM 43-4127] File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" Line 44 : The "System Verilog Cover" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" Line 45 : The "System Verilog Cover" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" Line 46 : The "System Verilog Cover" is not supported yet for simulation. The statement will be ignored.
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.cb
+Compiling module work.ddd_sva
+Compiling module work.ddd_pacemaker_default
+Compiling module work.cb
+Compiling module work.ddd_apb_sva
+Compiling module work.ddd_pacemaker_apb_default
+Compiling module work.heart_model
+Compiling module work.tb_closed_loop
+Built simulation snapshot cl_sva_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Nov 22 17:54:08 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/cl_sva_snap/xsim_script.tcl
+# xsim {cl_sva_snap} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+  scen 1 PVARP 320: 12000 ticks, 0 mismatches, arrhythmia_irq=0
+  scen 2 PVARP 320: 12000 ticks, 0 mismatches, arrhythmia_irq=0
+  scen 3 PVARP 320: 12000 ticks, 0 mismatches, arrhythmia_irq=0
+  scen 4 PVARP 320: 12000 ticks, 0 mismatches, arrhythmia_irq=0
+  scen 5 PVARP 250: 12000 ticks, 0 mismatches, arrhythmia_irq=1
+  scen 5 PVARP 320: 12000 ticks, 0 mismatches, arrhythmia_irq=0
+CLOSED-LOOP BIT-EXACT PASS: 72000 ticks, hardware heart+pacemaker == Python
+$finish called at time : 2161380 ns : File "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/tb_closed_loop.v" Line 93
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Nov 22 17:54:11 2026...

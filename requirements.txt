@@ -1,0 +1,19 @@
+# P17 QRS Detector and DDD Pacemaker Controller
+# Phase 1 Python dependencies (ECG loading + visualization only).
+#
+# Install into a project-local virtual environment:
+#     py -m venv .venv
+#     .venv\Scripts\activate        (Windows)
+#     pip install -r requirements.txt
+#
+# Versions below are minimums known to work; the pinned versions actually
+# used during Phase 1 development are noted in the trailing comments.
+
+numpy>=2.0         # tested with 2.5.4
+scipy>=1.11        # tested with 1.18.1  (not used in Phase 1, reserved for Phase 2 filters)
+matplotlib>=3.8    # tested with 3.11.2
+wfdb>=4.1          # tested with 4.3.1   (PhysioNet WFDB reader)
+pandas>=2.0        # tested with 3.0.6   (annotation table export)
+dd>=0.6           # tested with 0.6.0   (BDD experiments)
+networkx>=3.0     # tested with 3.7     (hand-HLS graphs)
+pytest>=8.0       # tested with 9.1.1

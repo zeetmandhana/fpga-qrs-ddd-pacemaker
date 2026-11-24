@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Zeet Mandhana/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-23156-Zeet/offline/s1_mitbih_replay/s1_mitbih_replay.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="8,193"></ZoomEndTime>
+      <Cursor1Time time="8,192"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="291"></NameColumnWidth>
+      <ValueColumnWidth column_width="291"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="p17_soc_i/ila_tap_0_rec_stb" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">p17_soc_i/ila_tap_0_rec_stb</obj_property>
+      <obj_property name="ObjectShortName">ila_tap_0_rec_stb</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="p17_soc_i/ila_tap_0_rec_ecg" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">p17_soc_i/ila_tap_0_rec_ecg[10:0]</obj_property>
+      <obj_property name="ObjectShortName">ila_tap_0_rec_ecg[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">220</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_LINEAR</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="p17_soc_i/ila_tap_0_rec_qrs" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">p17_soc_i/ila_tap_0_rec_qrs</obj_property>
+      <obj_property name="ObjectShortName">ila_tap_0_rec_qrs</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="p17_soc_i/ila_tap_0_rec_ap" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">p17_soc_i/ila_tap_0_rec_ap</obj_property>
+      <obj_property name="ObjectShortName">ila_tap_0_rec_ap</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="p17_soc_i/ila_tap_0_rec_vp" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">p17_soc_i/ila_tap_0_rec_vp</obj_property>
+      <obj_property name="ObjectShortName">ila_tap_0_rec_vp</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="p17_soc_i/ila_tap_0_rec_as" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">p17_soc_i/ila_tap_0_rec_as</obj_property>
+      <obj_property name="ObjectShortName">ila_tap_0_rec_as</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="p17_soc_i/ila_tap_0_rec_vs" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">p17_soc_i/ila_tap_0_rec_vs</obj_property>
+      <obj_property name="ObjectShortName">ila_tap_0_rec_vs</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="p17_soc_i/ila_tap_0_rec_qrs_delay" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">p17_soc_i/ila_tap_0_rec_qrs_delay[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ila_tap_0_rec_qrs_delay[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="p17_soc_i/ila_tap_0_rec_mode" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">p17_soc_i/ila_tap_0_rec_mode[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ila_tap_0_rec_mode[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="p17_soc_i/ila_tap_0_rec_mwi" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">p17_soc_i/ila_tap_0_rec_mwi[23:0]</obj_property>
+      <obj_property name="ObjectShortName">ila_tap_0_rec_mwi[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="p17_soc_i/ila_tap_0_rec_thr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">p17_soc_i/ila_tap_0_rec_thr[23:0]</obj_property>
+      <obj_property name="ObjectShortName">ila_tap_0_rec_thr[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="p17_soc_i/ila_tap_0_rec_n" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">p17_soc_i/ila_tap_0_rec_n[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ila_tap_0_rec_n[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

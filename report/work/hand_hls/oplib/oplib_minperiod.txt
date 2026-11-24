@@ -1,0 +1,8 @@
+op_add32 slack=7.043 minperiod=2.957 dp=2.935 a_reg[13]/C -> s_o_reg[29]/D
+op_addsub40 slack=5.979 minperiod=4.021 dp=3.999 sub_reg/C -> s_o_reg[37]/D
+op_lutram64 slack=8.179 minperiod=1.821 dp=1.171 ra_reg[5]/C -> mem_reg/ADDRARDADDR[10]
+op_mul33_full slack=4.308 minperiod=5.692 dp=4.208 p_o0/CLK -> p_o_reg/PCIN[0]
+op_mul_lo32 slack=4.308 minperiod=5.692 dp=4.208 p_o0__0/CLK -> p_o_reg/PCIN[0]
+op_mux4_32 slack=7.701 minperiod=2.299 dp=2.244 s_reg[1]/C -> y_o_reg[20]/D
+op_sq_lo32 slack=4.308 minperiod=5.692 dp=4.208 p_o0__0/CLK -> p_o_reg/PCIN[0]
+op_sq_lo32_p2 slack=4.308 minperiod=5.692 dp=4.208 m0__0/CLK -> m_reg/PCIN[0]

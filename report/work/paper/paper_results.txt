@@ -1,0 +1,15 @@
+Baseline vs Pan-Tompkins (same input, same +/-150 ms matcher, whole records)
+B0 raw fixed threshold T0 = 55 ADC codes (0.28 mV) tuned on rec 100
+B1 PT filters + fixed MWI threshold T1 = 476144, fiducial delay D = 7 samples, tuned on rec 100
+E  full Pan-Tompkins (adaptive dual thresholds, search-back, T-wave test)
+
+ rec  beats |  B0 Se  B0 +P |  B1 Se  B1 +P |   E Se   E +P
+ 100   2273 | 100.00 100.00 | 100.00 100.00 |  99.87 100.00
+ 101   1865 |  99.62  98.99 |  99.57  98.78 |  99.84  99.79
+ 106   2027 |  96.10  64.23 |  99.16  96.22 |  99.01 100.00
+ 208   2955 |  98.00  87.73 |  97.70  97.14 |  99.29  99.83
+ 234   2753 |  99.06  98.84 |  99.96  99.82 |  99.78 100.00
+
+GROSS B0: Se 98.56%  +P 88.36%  TP 11702 FP 1541 FN 171  mean latency -15 ms (decision - R peak)
+GROSS B1: Se 99.21%  +P 98.40%  TP 11779 FP 192 FN 94  mean latency 14 ms (decision - R peak)
+GROSS E : Se 99.55%  +P 99.92%  TP 11820 FP 9 FN 53  mean latency 217 ms (decision - R peak)

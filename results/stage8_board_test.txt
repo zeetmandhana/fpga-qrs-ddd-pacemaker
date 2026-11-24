@@ -1,0 +1,14 @@
+P17 on Zybo Z7-10 -- on-board test over JTAG/VIO (Wed Nov 11 15:13:03 +0530 2026), bitstream C:/Vivadoproject/P17_QRS_Pacemaker/vivado/zybo_reports/p17_soc_final.bit
+rates measured from hardware event counters; HR(RR) from the detector's last R-R interval
+1/6 MIT-BIH rec 100 replay         mode=0  QRS/min= 75  AP/min=  0  VP/min=  0  AS/min=  0  VS/min= 75  IRQ+=0  HR(RR)= 74  LED=0000 RGB=111
+2/6 normal sinus 75 (LRI 1000)     mode=1  QRS/min= 76  AP/min=  0  VP/min=  0  AS/min= 76  VS/min= 76  IRQ+=0  HR(RR)= 75  LED=0000 RGB=010
+3/6 sinus brady 40 (LRI 1000)      mode=2  QRS/min= 60  AP/min= 64  VP/min=  0  AS/min=  0  VS/min= 64  IRQ+=0  HR(RR)= 62  LED=0000 RGB=100
+3/6 brady, BTN2 -> LRI 857         mode=2  QRS/min=60000  AP/min=60000  VP/min=60000  AS/min=60000  VS/min=60000  IRQ+=530  HR(RR)=  0  LED=0001 RGB=111
+3/6 brady, BTN2 -> LRI 750         mode=2  QRS/min=60000  AP/min=60000  VP/min=60000  AS/min=60000  VS/min=60000  IRQ+=21  HR(RR)=  0  LED=0000 RGB=001
+3/6 brady, BTN2 -> LRI 1000        mode=2  QRS/min=60000  AP/min=60000  VP/min=60000  AS/min=60000  VS/min=60000  IRQ+=2064  HR(RR)=  0  LED=0100 RGB=101
+4/6 complete AV block              mode=3  QRS/min=60000  AP/min=60000  VP/min=60000  AS/min=60000  VS/min=60000  IRQ+=2067  HR(RR)=  0  LED=0100 RGB=100
+5/6 AV block + brady               mode=4  QRS/min=60000  AP/min=60000  VP/min=60000  AS/min=60000  VS/min=60000  IRQ+=15  HR(RR)=  0  LED=0000 RGB=110
+  (scenario 5 reached after 3 BTN1 presses)
+6/6 PMT, PVARP 250, guard OFF      mode=5  QRS/min=120  AP/min=  0  VP/min=120  AS/min=120  VS/min=  0  IRQ+=0  HR(RR)=120  LED=1000 RGB=011
+6/6 PMT, guard ON (RV32 ISR)       mode=5  QRS/min= 60  AP/min= 60  VP/min= 60  AS/min=  0  VS/min=  0  IRQ+=0  HR(RR)= 60  LED=0000 RGB=011
+6/6 PMT, pacing OFF (SW0=0)        mode=5  QRS/min= 40  AP/min=  0  VP/min=  0  AS/min=  0  VS/min=  0  IRQ+=0  HR(RR)= 40  LED=0000 RGB=011

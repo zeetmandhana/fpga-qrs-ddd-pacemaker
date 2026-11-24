@@ -1,0 +1,38 @@
+SBY 18:12:11 [ddd_before_fix] Removing directory 'C:\Vivadoproject\P17_QRS_Pacemaker\report\work\formal\sby\ddd_before_fix'.
+SBY 18:12:11 [ddd_before_fix] Copy 'C:\Vivadoproject\P17_QRS_Pacemaker\report\work\formal\sby\ddd_props.vh' to 'C:\Vivadoproject\P17_QRS_Pacemaker\report\work\formal\sby\ddd_before_fix\src\ddd_props.vh'.
+SBY 18:12:11 [ddd_before_fix] Copy 'C:\Vivadoproject\P17_QRS_Pacemaker\report\work\formal\sby\ddd_formal.sv' to 'C:\Vivadoproject\P17_QRS_Pacemaker\report\work\formal\sby\ddd_before_fix\src\ddd_formal.sv'.
+SBY 18:12:11 [ddd_before_fix] Copy 'C:\Vivadoproject\P17_QRS_Pacemaker\report\work\formal\sby\ddd_formal16.sv' to 'C:\Vivadoproject\P17_QRS_Pacemaker\report\work\formal\sby\ddd_before_fix\src\ddd_formal16.sv'.
+SBY 18:12:11 [ddd_before_fix] Copy 'C:\Vivadoproject\P17_QRS_Pacemaker\report\work\formal\sby\before_fix_ddd_pacemaker.v' to 'C:\Vivadoproject\P17_QRS_Pacemaker\report\work\formal\sby\ddd_before_fix\src\ddd_pacemaker.v'.
+SBY 18:12:11 [ddd_before_fix] engine_0: smtbmc yices
+SBY 18:12:11 [ddd_before_fix] base: starting process "cd ddd_before_fix/src& yosys -ql ../model/design.log ../model/design.ys"
+SBY 18:12:11 [ddd_before_fix] base: finished (returncode=0)
+SBY 18:12:11 [ddd_before_fix] prep: starting process "cd ddd_before_fix/model& yosys -ql design_prep.log design_prep.ys"
+SBY 18:12:11 [ddd_before_fix] prep: finished (returncode=0)
+SBY 18:12:11 [ddd_before_fix] smt2: starting process "cd ddd_before_fix/model& yosys -ql design_smt2.log design_smt2.ys"
+SBY 18:12:11 [ddd_before_fix] smt2: finished (returncode=0)
+SBY 18:12:11 [ddd_before_fix] engine_0: starting process "cd ddd_before_fix& yosys-smtbmc -s yices --presat --unroll --noprogress -t 40  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Solver: yices
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  BMC failed!
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Assert failed in ddd_formal.dut: A8
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 18:12:11 [ddd_before_fix] engine_0: ##   0:00:00  Status: failed
+SBY 18:12:12 [ddd_before_fix] engine_0: finished (returncode=1)
+SBY 18:12:12 [ddd_before_fix] engine_0: Status returned by engine: FAIL
+SBY 18:12:12 [ddd_before_fix] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 18:12:12 [ddd_before_fix] summary: Elapsed process time unvailable on Windows
+SBY 18:12:12 [ddd_before_fix] summary: engine_0 (smtbmc yices) returned FAIL
+SBY 18:12:12 [ddd_before_fix] summary: counterexample trace: ddd_before_fix\engine_0\trace.vcd
+SBY 18:12:12 [ddd_before_fix] summary:   failed assertion ddd_formal.dut.A8 at ddd_props.vh:45.39-45.62 step 3
+SBY 18:12:12 [ddd_before_fix] DONE (FAIL, rc=2)
+SBY 18:12:12 The following tasks failed: ['before_fix']

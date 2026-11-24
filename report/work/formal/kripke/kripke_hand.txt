@@ -1,0 +1,47 @@
+Kripke structure (16 states):
+  s0  AEI t_v=10 t_av=0 event=-  upper=0 slow=0 -> s1
+  s1  AVI t_v=11 t_av=0 event=AP upper=0 slow=0 -> s2
+  s2  AVI t_v=11 t_av=1 event=-  upper=0 slow=0 -> s3
+  s3  AEI t_v=0  t_av=0 event=VP upper=0 slow=1 -> s4
+  s4  AEI t_v=1  t_av=0 event=-  upper=0 slow=0 -> s5
+  s5  AEI t_v=2  t_av=0 event=-  upper=0 slow=0 -> s6, s7
+  s6  AEI t_v=3  t_av=0 event=-  upper=0 slow=0 -> s8
+  s7  AVI t_v=3  t_av=0 event=AS upper=0 slow=0 -> s9
+  s8  AEI t_v=4  t_av=0 event=-  upper=0 slow=0 -> s10
+  s9  AVI t_v=4  t_av=1 event=-  upper=0 slow=0 -> s11
+  s10 AEI t_v=5  t_av=0 event=-  upper=0 slow=0 -> s12
+  s11 AEI t_v=0  t_av=0 event=VP upper=1 slow=0 -> s4
+  s12 AEI t_v=6  t_av=0 event=-  upper=0 slow=0 -> s13
+  s13 AEI t_v=7  t_av=0 event=-  upper=0 slow=0 -> s14
+  s14 AVI t_v=8  t_av=0 event=AP upper=0 slow=0 -> s15
+  s15 AVI t_v=9  t_av=1 event=-  upper=0 slow=0 -> s3
+
+phi1 = E[ !upper U AS ]  (least fixpoint)
+  Z0  = [AS] = {s7}
+  Z1  = Z0 + {s5}
+  Z2  = Z1 + {s4}
+  Z3  = Z2 + {s3}
+  Z4  = Z3 + {s2,s15}
+  Z5  = Z4 + {s1,s14}
+  Z6  = Z5 + {s0,s13}
+  Z7  = Z6 + {s12}
+  Z8  = Z7 + {s10}
+  Z9  = Z8 + {s8}
+  Z10 = Z9 + {s6}
+  fixpoint after 10 iterations: 14 states, all except {s9,s11}
+
+phi2 = EG !slow_vbeat  (greatest fixpoint)
+  Z0  = [!slow] = all except {s3}
+  Z1  = Z0 - {s2,s15}
+  Z2  = Z1 - {s1,s14}
+  Z3  = Z2 - {s0,s13}
+  Z4  = Z3 - {s12}
+  Z5  = Z4 - {s10}
+  Z6  = Z5 - {s8}
+  Z7  = Z6 - {s6}
+  fixpoint after 7 iterations: {s4,s5,s7,s9,s11}
+
+NuSMV (state-by-state, explicit copy kripke_hand.smv):
+  phi1 true in {s0,s1,s2,s3,s4,s5,s6,s7,s8,s10,s12,s13,s14,s15}  -> MATCH
+  phi2 true in {s4,s5,s7,s9,s11}  -> MATCH
+  at the initial state s0: phi1 holds, phi2 fails

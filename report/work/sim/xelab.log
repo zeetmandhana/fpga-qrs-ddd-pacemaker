@@ -1,0 +1,22 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_ddd_random -s tb_rand_snap -timescale 1ns/1ps -cc_type sbct -cov_db_name rand_cov -cov_db_dir ./cov 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+WARNING: [XSIM 43-4127] File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" Line 44 : The "System Verilog Cover" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" Line 45 : The "System Verilog Cover" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" Line 46 : The "System Verilog Cover" is not supported yet for simulation. The statement will be ignored.
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.cb
+Compiling module work.ddd_sva
+Compiling module work.ddd_pacemaker_default
+Compiling module work.cb
+Compiling module work.ddd_apb_sva
+Compiling module work.ddd_pacemaker_apb_default
+Compiling module work.tb_ddd_random
+Built simulation snapshot tb_rand_snap

@@ -1,0 +1,54 @@
+[tasks]
+bmc
+prove
+pdr
+prove16
+before_fix
+bug1
+bug2
+
+[options]
+bmc: mode bmc
+bmc: depth 40
+prove: mode prove
+prove: depth 12
+pdr: mode prove
+prove16: mode prove
+prove16: depth 12
+before_fix: mode bmc
+before_fix: depth 40
+bug1: mode bmc
+bug1: depth 40
+bug2: mode bmc
+bug2: depth 40
+
+[engines]
+bmc: smtbmc yices
+bmc: smtbmc boolector
+bmc: smtbmc bitwuzla
+bmc: abc bmc3
+prove: smtbmc yices
+pdr: abc pdr
+prove16: smtbmc yices
+before_fix: smtbmc yices
+bug1: smtbmc yices
+bug2: smtbmc yices
+
+[script]
+read -formal ddd_pacemaker.v
+~prove16: read -formal ddd_formal.sv
+~prove16: prep -top ddd_formal
+prove16: read -formal ddd_formal16.sv
+prove16: prep -top ddd_formal16
+
+[files]
+ddd_props.vh
+ddd_formal.sv
+ddd_formal16.sv
+bmc: ddd_pacemaker.v rtl_ddd_pacemaker.v
+prove: ddd_pacemaker.v rtl_ddd_pacemaker.v
+pdr: ddd_pacemaker.v rtl_ddd_pacemaker.v
+prove16: ddd_pacemaker.v rtl_ddd_pacemaker.v
+before_fix: ddd_pacemaker.v before_fix_ddd_pacemaker.v
+bug1: ddd_pacemaker.v bug1_ddd_pacemaker.v
+bug2: ddd_pacemaker.v bug2_ddd_pacemaker.v

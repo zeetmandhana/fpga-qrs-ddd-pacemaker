@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_hpbuf_RAM_2P_LUTRAM_1R1W.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_hpbuf_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_lpbuf_RAM_2P_LUTRAM_1R1W.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_lpbuf_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_sqbuf_RAM_2P_LUTRAM_1R1W.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_sqbuf_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_xbuf_RAM_2P_LUTRAM_1R1W.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_xbuf_RAM_2P_LUTRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/hls_qrs_stream/qrs_stream_mul_29s_29s_32_2_1.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_stream_mul_29s_29s_32_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/paper/rtl/qrs_baselines.v" into library work
+INFO: [VRFC 10-311] analyzing module qrs_cross_refract
+INFO: [VRFC 10-311] analyzing module qrs_base_thr
+INFO: [VRFC 10-311] analyzing module qrs_base_mwi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/paper/rtl/tb_qrs_baselines.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_qrs_baselines

@@ -1,0 +1,22 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Nov 20 18:02:13 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/snap/xsim_script.tcl
+# xsim {snap} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+ cyc tick a v | RTL phase t_v t_av | out AP VP AS VS arr | trace AP VP AS VS
+   0   0  0 0 |     0   10    0  |      0  0  0  0  0  |        0  0  0  0               
+   1   1  0 1 |     0   10    0  |      0  0  0  1  0  |        0  0  0  1               
+   2   1  0 1 |     0    0    0  |      0  0  0  0  0  |        0  0  0  1   <-- MISMATCH
+REPLAY stim.txt: 3 cycles, output mismatches 1, register mismatches 0, first mismatch at cycle 2
+MONITORS: AS inside PVARP = 0, VS inside VRP = 0, V beats = 1 of which at upper rate = 0
+$finish called at time : 56 ns : File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/formal/replay/tb_replay_ddd_pacemaker.v" Line 76
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Nov 20 18:02:14 2026...

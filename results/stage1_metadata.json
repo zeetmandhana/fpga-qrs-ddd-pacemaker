@@ -1,0 +1,56 @@
+{
+  "record_number": "100",
+  "sampling_frequency_hz": 360.0,
+  "expected_sampling_frequency_hz": 360,
+  "sampling_frequency_matches_expected": true,
+  "preferred_channel": "MLII",
+  "selected_channel": "MLII",
+  "selected_channel_index": 0,
+  "channel_fallback_used": false,
+  "all_channels": [
+    "MLII",
+    "V5"
+  ],
+  "recording_units": "mV",
+  "total_sample_count_full_record": 650000,
+  "total_duration_full_record_s": 1805.5556,
+  "displayed_start_s": 0.0,
+  "displayed_duration_s": 10.0,
+  "displayed_sample_count": 3600,
+  "annotations_in_displayed_segment": 14,
+  "reference_beats_in_displayed_segment": 13,
+  "beat_symbols_present": [
+    "A",
+    "N"
+  ],
+  "nonbeat_symbols_present": [
+    "+"
+  ],
+  "all_symbol_counts_in_segment": {
+    "+": 1,
+    "N": 12,
+    "A": 1
+  },
+  "beat_symbol_definition_used": [
+    "/",
+    "?",
+    "A",
+    "B",
+    "E",
+    "F",
+    "J",
+    "L",
+    "N",
+    "Q",
+    "R",
+    "S",
+    "V",
+    "a",
+    "e",
+    "f",
+    "j",
+    "n",
+    "r"
+  ],
+  "note": "Annotations are MIT-BIH reference (ground-truth) labels, not detector output. Only symbols in 'beat_symbol_definition_used' are counted as heartbeats."
+}

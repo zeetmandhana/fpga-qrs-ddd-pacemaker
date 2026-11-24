@@ -1,0 +1,97 @@
+%Warning-WIDTHEXPAND: qrs_decision.v:98:37: Operator ADD expects 35 bits on the LHS, but LHS's ARRAYSEL generates 32 bits.
+                                          : ... note: In instance 'qrs_decision'
+   98 |     wire [34:0] sum_all = rr_all[0] + rr_all[1] + rr_all[2] + rr_all[3] +
+      |                                     ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.055
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: qrs_decision.v:98:37: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                          : ... note: In instance 'qrs_decision'
+   98 |     wire [34:0] sum_all = rr_all[0] + rr_all[1] + rr_all[2] + rr_all[3] +
+      |                                     ^
+%Warning-WIDTHEXPAND: qrs_decision.v:98:49: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                          : ... note: In instance 'qrs_decision'
+   98 |     wire [34:0] sum_all = rr_all[0] + rr_all[1] + rr_all[2] + rr_all[3] +
+      |                                                 ^
+%Warning-WIDTHEXPAND: qrs_decision.v:98:61: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                          : ... note: In instance 'qrs_decision'
+   98 |     wire [34:0] sum_all = rr_all[0] + rr_all[1] + rr_all[2] + rr_all[3] +
+      |                                                             ^
+%Warning-WIDTHEXPAND: qrs_decision.v:98:73: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                          : ... note: In instance 'qrs_decision'
+   98 |     wire [34:0] sum_all = rr_all[0] + rr_all[1] + rr_all[2] + rr_all[3] +
+      |                                                                         ^
+%Warning-WIDTHEXPAND: qrs_decision.v:99:37: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                          : ... note: In instance 'qrs_decision'
+   99 |                           rr_all[4] + rr_all[5] + rr_all[6] + rr_all[7];
+      |                                     ^
+%Warning-WIDTHEXPAND: qrs_decision.v:99:49: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                          : ... note: In instance 'qrs_decision'
+   99 |                           rr_all[4] + rr_all[5] + rr_all[6] + rr_all[7];
+      |                                                 ^
+%Warning-WIDTHEXPAND: qrs_decision.v:99:61: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                          : ... note: In instance 'qrs_decision'
+   99 |                           rr_all[4] + rr_all[5] + rr_all[6] + rr_all[7];
+      |                                                             ^
+%Warning-WIDTHEXPAND: qrs_decision.v:100:36: Operator ADD expects 35 bits on the LHS, but LHS's ARRAYSEL generates 32 bits.
+                                           : ... note: In instance 'qrs_decision'
+  100 |     wire [34:0] sum_ok  = rr_ok[0] + rr_ok[1] + rr_ok[2] + rr_ok[3] +
+      |                                    ^
+%Warning-WIDTHEXPAND: qrs_decision.v:100:36: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                           : ... note: In instance 'qrs_decision'
+  100 |     wire [34:0] sum_ok  = rr_ok[0] + rr_ok[1] + rr_ok[2] + rr_ok[3] +
+      |                                    ^
+%Warning-WIDTHEXPAND: qrs_decision.v:100:47: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                           : ... note: In instance 'qrs_decision'
+  100 |     wire [34:0] sum_ok  = rr_ok[0] + rr_ok[1] + rr_ok[2] + rr_ok[3] +
+      |                                               ^
+%Warning-WIDTHEXPAND: qrs_decision.v:100:58: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                           : ... note: In instance 'qrs_decision'
+  100 |     wire [34:0] sum_ok  = rr_ok[0] + rr_ok[1] + rr_ok[2] + rr_ok[3] +
+      |                                                          ^
+%Warning-WIDTHEXPAND: qrs_decision.v:100:69: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                           : ... note: In instance 'qrs_decision'
+  100 |     wire [34:0] sum_ok  = rr_ok[0] + rr_ok[1] + rr_ok[2] + rr_ok[3] +
+      |                                                                     ^
+%Warning-WIDTHEXPAND: qrs_decision.v:101:36: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                           : ... note: In instance 'qrs_decision'
+  101 |                           rr_ok[4] + rr_ok[5] + rr_ok[6] + rr_ok[7];
+      |                                    ^
+%Warning-WIDTHEXPAND: qrs_decision.v:101:47: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                           : ... note: In instance 'qrs_decision'
+  101 |                           rr_ok[4] + rr_ok[5] + rr_ok[6] + rr_ok[7];
+      |                                               ^
+%Warning-WIDTHEXPAND: qrs_decision.v:101:58: Operator ADD expects 35 bits on the RHS, but RHS's ARRAYSEL generates 32 bits.
+                                           : ... note: In instance 'qrs_decision'
+  101 |                           rr_ok[4] + rr_ok[5] + rr_ok[6] + rr_ok[7];
+      |                                                          ^
+%Warning-UNUSEDSIGNAL: qrs_decision.v:80:24: Bits of signal are not used: 'thr1_full'[41]
+                                           : ... note: In instance 'qrs_decision'
+   80 |     wire signed [41:0] thr1_full = npki_s + ((spki_s - npki_s) >>> 2);
+      |                        ^~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.055
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: qrs_decision.v:93:17: Bits of signal are not used: 'lsum91'[16:0]
+                                           : ... note: In instance 'qrs_decision'
+   93 |     wire [66:0] lsum91 = ({7'd0, lsum_n} << 6) + ({7'd0, lsum_n} << 4) +
+      |                 ^~~~~~
+%Warning-UNUSEDSIGNAL: qrs_decision.v:95:17: Bits of signal are not used: 'npki_init'[49:40]
+                                           : ... note: In instance 'qrs_decision'
+   95 |     wire [49:0] npki_init = lsum91[66:17];
+      |                 ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: qrs_decision.v:98:17: Bits of signal are not used: 'sum_all'[2:0]
+                                           : ... note: In instance 'qrs_decision'
+   98 |     wire [34:0] sum_all = rr_all[0] + rr_all[1] + rr_all[2] + rr_all[3] +
+      |                 ^~~~~~~
+%Warning-UNUSEDSIGNAL: qrs_decision.v:100:17: Bits of signal are not used: 'sum_ok'[2:0]
+                                            : ... note: In instance 'qrs_decision'
+  100 |     wire [34:0] sum_ok  = rr_ok[0] + rr_ok[1] + rr_ok[2] + rr_ok[3] +
+      |                 ^~~~~~
+%Warning-UNUSEDSIGNAL: qrs_decision.v:119:24: Bits of signal are not used: 'npki_upd'[41:40]
+                                            : ... note: In instance 'qrs_decision'
+  119 |     wire signed [41:0] npki_upd = npki_s + ((cval_s - npki_s) >>> 3);
+      |                        ^~~~~~~~
+%Warning-UNUSEDSIGNAL: qrs_decision.v:123:24: Bits of signal are not used: 'spki_upd'[41:40]
+                                            : ... note: In instance 'qrs_decision'
+  123 |     wire signed [41:0] spki_upd = spki_s + (r_sb ? ((rval_s - spki_s) >>> 2)
+      |                        ^~~~~~~~
+%Error: Exiting due to 23 warning(s)

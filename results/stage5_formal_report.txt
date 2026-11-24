@@ -1,0 +1,44 @@
+P17 Phase 5 -- Formal (CTL) verification of the DDD pacemaker
+==============================================================
+
+Method: explicit-state CTL model checking (src/ctl.py) over a
+counter-abstracted finite model (src/pacemaker_model.py). The engine
+is validated against known Kripke structures in tests/test_formal.py.
+
+Abstract timing (ticks): AVI=2 VRP=3 PVARP=4 URI=5 LRI=10 AEI=8 VA=3
+Reachable states: over-approx=22, PMT-safe=13, PMT-bug=16
+
+Properties
+--------------------------------------------------------------
+  P1  AG !(AP & VP)   (safety: never pace both chambers)  : PROVED
+  P2  AG AF Vbeat     (liveness: ventricle always beats)  : PROVED
+  P3  AG AF normal-beat, correct PVARP blanking           : PROVED
+  P3  AG AF normal-beat, INJECTED PVARP bug               : VIOLATED (PMT)
+
+Pacemaker-mediated tachycardia (PMT) counterexample
+--------------------------------------------------------------
+Injected bug: the atrial channel senses retrograde P-waves inside
+PVARP. The model checker returns a lasso (a stem then a cycle that
+repeats forever) in which no normal-rate beat ever occurs again:
+
+  stem:
+    phase=AEI t_v=0  t_av=0  event=-    
+    phase=AEI t_v=1  t_av=0  event=-    
+    phase=AEI t_v=2  t_av=0  event=-    
+    phase=AEI t_v=3  t_av=0  event=-    
+    phase=AEI t_v=4  t_av=0  event=-    
+    phase=AEI t_v=5  t_av=0  event=-    
+    phase=AEI t_v=6  t_av=0  event=-    
+    phase=AEI t_v=7  t_av=0  event=-    
+    phase=AVI t_v=8  t_av=0  event=AP   
+    phase=AVI t_v=9  t_av=1  event=-    
+    phase=AEI t_v=0  t_av=0  event=VP   
+  cycle (repeats forever -- every ventricular beat at the upper rate):
+    phase=AEI t_v=1  t_av=0  event=-    
+    phase=AEI t_v=2  t_av=0  event=-    
+    phase=AVI t_v=3  t_av=0  event=AS   
+    phase=AVI t_v=4  t_av=1  event=-    
+    phase=AEI t_v=0  t_av=0  event=VP    [UPPER-RATE]
+
+With correct PVARP blanking (P3 safe) this cycle is unreachable, so
+the property holds and no PMT can occur.

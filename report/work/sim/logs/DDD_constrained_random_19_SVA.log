@@ -1,0 +1,68 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/ddd_pacemaker.v" into library work
+INFO: [VRFC 10-311] analyzing module ddd_pacemaker
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Vivadoproject/P17_QRS_Pacemaker/rtl/ddd_pacemaker_apb.v" into library work
+INFO: [VRFC 10-311] analyzing module ddd_pacemaker_apb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" into library work
+INFO: [VRFC 10-311] analyzing module ddd_sva
+INFO: [VRFC 10-311] analyzing module ddd_apb_sva
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/tb_ddd_random.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_ddd_random
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_ddd_random -s tb_rand_snap -timescale 1ns/1ps -cc_type sbct -cov_db_name rand_cov -cov_db_dir ./cov 
+Multi-threading is on. Using 22 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+WARNING: [XSIM 43-4127] File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" Line 44 : The "System Verilog Cover" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" Line 45 : The "System Verilog Cover" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/ddd_sva.sv" Line 46 : The "System Verilog Cover" is not supported yet for simulation. The statement will be ignored.
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.cb
+Compiling module work.ddd_sva
+Compiling module work.ddd_pacemaker_default
+Compiling module work.cb
+Compiling module work.ddd_apb_sva
+Compiling module work.ddd_pacemaker_apb_default
+Compiling module work.tb_ddd_random
+Built simulation snapshot tb_rand_snap
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sun Nov 22 17:53:51 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_rand_snap/xsim_script.tcl
+# xsim {tb_rand_snap} -cov_db_dir ./cov -cov_db_name rand_cov -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+RANDOM: 60 sets, 300000 ticks; mismatches AS 0 VS 0 AP 0 VP 0 ARR 0; readback errors 0; IRQ latched+cleared 535 times, W1C errors 0
+RANDOM REGRESSION PASS
+WARNING: The Functional Coverage Database has not been updated during simulation. Please recheck testbench to confirm that covergroups are being instantiated correctly and rerun simulation.
+$finish called at time : 9046650 ns : File "C:/Vivadoproject/P17_QRS_Pacemaker/report/work/sim/tb_ddd_random.sv" Line 96
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Nov 22 17:53:57 2026...
+
+ Options Set are : 
+
+   Command Line               : xcrg -cc_db rand_cov -cc_dir ./cov/xsim.codecov -report_format text -report_dir ./cov_rpt
+   Report Format              : text
+   Log File                   : xcrg.log
+   Code Coverage Dir[s]       : ./cov/xsim.codecov
+   Code Coverage DB[s]        : rand_cov
+
+
+********************************************************
+                  Code Coverage Report 
+********************************************************
+
+ Restoring Code Coverage DB[s] from : 
+
+ ERROR : Restoring of Code Coverage DBs failed. Please recheck directory/database names and run again.
+

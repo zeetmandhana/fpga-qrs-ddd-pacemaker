@@ -1,0 +1,12 @@
+@echo off
+rem P17 board phase -- xsim of the whole Zybo Z7-10 top (NEORV32 + firmware + all RTL).
+call "C:\AMDDesignTools\2025.2\Vivado\settings64.bat"
+cd /d "C:\Vivadoproject\P17_QRS_Pacemaker\rtl"
+set "C=C:\NEORV32\neorv32\rtl\core"
+call xvhdl --work neorv32 %C%\neorv32_package.vhd %C%\neorv32_sys.vhd %C%\neorv32_cpu_decompressor.vhd %C%\neorv32_cpu_frontend.vhd %C%\neorv32_cpu_control.vhd %C%\neorv32_cpu_hwtrig.vhd %C%\neorv32_prim.vhd %C%\neorv32_cpu_counters.vhd %C%\neorv32_cpu_regfile.vhd %C%\neorv32_cpu_alu_shifter.vhd %C%\neorv32_cpu_alu_muldiv.vhd %C%\neorv32_cpu_alu_bitmanip.vhd %C%\neorv32_cpu_alu_fpu.vhd %C%\neorv32_cpu_alu_cfu.vhd %C%\neorv32_cpu_alu_cond.vhd %C%\neorv32_cpu_alu_crypto.vhd %C%\neorv32_cpu_alu.vhd %C%\neorv32_cpu_lsu.vhd %C%\neorv32_cpu_pmp.vhd %C%\neorv32_cpu_trace.vhd %C%\neorv32_cpu.vhd %C%\neorv32_cache.vhd %C%\neorv32_bus.vhd %C%\neorv32_dma.vhd %C%\neorv32_imem.vhd %C%\neorv32_dmem.vhd %C%\neorv32_xbus.vhd %C%\neorv32_bootrom.vhd %C%\neorv32_cfs.vhd %C%\neorv32_sdi.vhd %C%\neorv32_gpio.vhd %C%\neorv32_wdt.vhd %C%\neorv32_clint.vhd %C%\neorv32_uart.vhd %C%\neorv32_spi.vhd %C%\neorv32_twi.vhd %C%\neorv32_twd.vhd %C%\neorv32_pwm.vhd %C%\neorv32_trng.vhd %C%\neorv32_neoled.vhd %C%\neorv32_gptmr.vhd %C%\neorv32_onewire.vhd %C%\neorv32_slink.vhd %C%\neorv32_tracer.vhd %C%\neorv32_sysinfo.vhd %C%\neorv32_debug_dtm.vhd %C%\neorv32_debug_auth.vhd %C%\neorv32_debug_dm.vhd %C%\neorv32_top.vhd %C%\neorv32_cache_ram.vhd firmware\build\neorv32_imem_image.vhd %C%\neorv32_imem_rom.vhd %C%\neorv32_imem_ram.vhd %C%\neorv32_dmem_ram.vhd %C%\neorv32_bootrom_image.vhd %C%\neorv32_bootrom_rom.vhd
+call xvhdl neorv32_p17.vhd
+call xvlog hls_qrs_stream\qrs_stream.v hls_qrs_stream\qrs_stream_hpbuf_RAM_2P_LUTRAM_1R1W.v hls_qrs_stream\qrs_stream_lpbuf_RAM_2P_LUTRAM_1R1W.v hls_qrs_stream\qrs_stream_sqbuf_RAM_2P_LUTRAM_1R1W.v hls_qrs_stream\qrs_stream_xbuf_RAM_2P_LUTRAM_1R1W.v hls_qrs_stream\qrs_stream_mul_29s_29s_32_2_1.v qrs_decision.v qrs_detector.v ddd_pacemaker.v ddd_pacemaker_apb.v heart_model.v ecg_source.v vga_sync.v ecg_display.v hdmi_tx.v xbus_apb_bridge.v demo_ctrl_apb.v p17_board_glue.v p17_zybo_top.v tb_p17_zybo_top.v
+call xvlog "C:\AMDDesignTools\2025.2\Vivado\data\verilog\src\glbl.v"
+call xelab tb_p17_zybo_top glbl -L unisims_ver -L secureip -L neorv32 -s tb_top_snap -timescale 1ns/1ps
+call xsim tb_top_snap -runall
+echo SIM_EXIT=%ERRORLEVEL%

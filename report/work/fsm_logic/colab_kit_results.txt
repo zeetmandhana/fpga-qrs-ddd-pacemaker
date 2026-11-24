@@ -1,0 +1,29 @@
+Professor's Digital Logic Synthesis Kit (vl401.py, Berkeley SIS/espresso/STAMINA/NOVA/JEDI)
+run in Google Colab on 2026-11-20 (new notebook, kit downloaded from
+https://a2dsl.iitmandi.ac.in/uploads/logic-synthesis-bda30098fbb5.zip; `vl401.py check`: all tools OK).
+Transcribed from the notebook output.
+
+1) python3 vl401.py minimize my_problems/ddd_spec_dc.kiss2 --save my_problems/ddd_min_stamina.kiss2
+   (DDD specification STG, 6 states, 7 inputs, 4 outputs, 178 rows; impossible inputs = don't care)
+   STEP 2  Partitioning method skipped: machine is INCOMPLETELY specified ('equivalent' replaced by
+           'compatible'); STAMINA handles this case.
+   STEP 3  STAMINA (Berkeley SIS):
+           Number of states in original machine : 6
+           Number of states in minimized machine : 2
+           Minimized machine (states S0, S1): 2 states, 7 inputs, 4 outputs, 176 transition rows
+   STEP 4  Summary: minimized 2 states, 1 flip-flop (binary code)
+   (The kit's pure-Python partition step on the completely specified version gives the same
+    2 classes {VRF,PVA,VRO,ALR} {AVD,URW}: kit_partition_ddd_spec.txt.)
+
+2) python3 vl401.py encode my_problems/qrs_decision_ctrl.kiss2 --multilevel
+       --codes IDL=000,TRK=001,CLS=010,REG=100,AVG=011,LIM=110,SBK=111,END=101
+   STEP 3  Cost of each encoding (espresso, two-level, multi-output):
+   encoding     products  literals  per-output lits  multi-level  codes (as printed, truncated by the kit)
+   binary       10        31        46               38           IDL=000 TRK=001 CLS=010 REG=011 AVG=1...
+   gray         10        33        51               39           IDL=000 TRK=001 CLS=011 REG=010 AVG=1...
+   onehot       11        17        36               21           IDL=10000000 TRK=01000000 CLS=0010000...
+   NOVA (SIS)   10        35        68               46           IDL=000 TRK=111 CLS=001 REG=110 AVG=0...
+   JEDI (SIS)   11        34        48               36           IDL=100 TRK=000 CLS=010 REG=101 AVG=1...
+   your codes   10        31        42               33           IDL=000 TRK=001 CLS=010 REG=100 AVG=0...
+   Kit note: best by shared products: binary (10 products); best by per-output literals: onehot (36).
+   Per-output literals of binary/gray/custom (46/51/42) equal our exact QM search (encoding_search.json).
